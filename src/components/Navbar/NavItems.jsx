@@ -44,7 +44,7 @@ function NavItems() {
 
   return (
     <>
-      <nav className=" flex w-1/2 md:justify-between justify-end text-zinc-500">
+      <nav className="flex w-2/3 md:justify-around justify-end text-zinc-500">
         <div className="hidden md:flex ">
           <NavLink />
         </div>
