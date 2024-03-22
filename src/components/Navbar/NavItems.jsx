@@ -7,19 +7,20 @@ import store from "/public/icons/store.svg";
 import Navbar from "./Navbar";
 import NavbarButton from "./NavbarButton";
 import MenuItems from "./MenuItems";
+import menu from "/public/icons/menu.svg"
 const NavLink = () => {
   return (
-    <div className="flex items-center gap-8">
+    <div className="flex items-center gap-8 text-sm">
       <Link href="/" className="flex items-center gap-2">
-        <Image width={12} height={12} src={store} />
+        <Image width={10} height={10} src={store} />
         Store
       </Link>
-      <Link href="/about" className="flex items-center gap-2">
-        <Image width={12} height={12} src={store} />
+      <Link href="/about" className="flex items-center gap-2 ">
+        <Image width={10} height={10} src={store} />
         Status
       </Link>
       <Link href="/about" className="flex items-center gap-2">
-        <Image width={12} height={12} src={store} />
+        <Image width={10} height={10} src={store} />
         FAQ
       </Link>
     </div>
@@ -44,16 +45,16 @@ function NavItems() {
 
   return (
     <>
-      <nav className="flex w-2/3 md:justify-around justify-end text-zinc-500">
+      <nav className="flex w-2/3 md:space-x-20 justify-end  text-primaryGray">
         <div className="hidden md:flex ">
           <NavLink />
         </div>
         <div className="hidden justify-center md:flex ">
           <NavbarButton />
         </div>
-        <div className="md:hidden px-7">
+        <div className="md:hidden ">
           <button className="text-red-700  " onClick={handleNavbar}>
-            {isOpen ? "X" : "|||"}
+            {isOpen ? "X" : <Image width={30} height={30}  src={menu.src}/>}
           </button>
         </div>
       </nav>

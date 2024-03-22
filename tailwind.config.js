@@ -20,6 +20,11 @@ module.exports = {
         primaryGreen: "#34E47A",
         secondaryWhite: "#ffffff1a",
         secondaryPurple: "#9690AD",
+        primaryGray: "#666F78",
+      },
+      fontFamily: {
+        moderat: ["Moderat"],
+        arame: ["Arame"],
       },
     },
   },

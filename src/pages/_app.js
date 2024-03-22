@@ -62,7 +62,9 @@ const moderat = localFont({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className="bg-backgroundColor min-h-screen  ${moderat?.variable} ${arame?.variable} font-arame">
+    <main
+      className={`bg-backgroundColor min-h-screen   ${arame?.className} `}
+    >
       <Component {...pageProps} />;
     </main>
   );
