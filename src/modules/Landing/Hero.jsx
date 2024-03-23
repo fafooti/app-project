@@ -4,15 +4,15 @@ import icon from "/public/icons/buttonicon.svg";
 import "./hero";
 function Hero() {
   return (
-    <div
-      style={{ backgroundImage: "url('/background/hero.svg')" }}
-      className=" bg-no-repeat bg-center bg-cover h-screen  "
-    >
-      <section className="w-full ">
-        <div className="flex flex-col mx-auto items-center text-center justify-start pt-8 md:w-4/5">
+    <div className="">
+      <section
+        style={{ background: "url('/background/hero.svg')" }}
+        className="bg-no-repeat bg-center bg-cover h-screen "
+      >
+        <div className="flex flex-col mx-auto items-center text-center justify-start  md:w-4/5">
           <a
             href=""
-            className="bg-primaryBlack py-2 px-4 mb-7  rounded border-secondaryWhite border-2 md:mt-8 text-primaryGreen w-fit"
+            className="bg-primaryBlack py-2 px-4 mb-7  rounded border-secondaryWhite border-2  text-primaryGreen w-fit"
           >
             wide variaty gamees
           </a>
