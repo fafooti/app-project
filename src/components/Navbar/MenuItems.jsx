@@ -9,7 +9,7 @@ import NavbarButton from "./NavbarButton";
 function MenuItems() {
    
   return (
-    <div className="text-gray-700 my-8 px-6 flex flex-col justify-center items-start border-t-2 border-secondaryWhite w-screen">
+    <div className="text-gray-700 my-8 px-6 flex flex-col  justify-center items-start border-t-2 border-secondaryWhite w-screen ">
       <Link href="/" className="flex items-center gap-2 mt-12 ">
         <Image width={12} height={12} src={store} />
         Store

@@ -2,21 +2,23 @@ import React from "react";
 import { Button } from "/src/components";
 import icon from "/public/icons/buttonicon.svg";
 import "./hero";
+import DetailsCard from "./DetailsCard";
+import DeatilsContainer from "./DeatilsContainer";
 function Hero() {
   return (
-    <div className="">
-      <section
-        style={{ background: "url('/background/hero.svg')" }}
-        className="bg-no-repeat bg-center bg-cover h-screen "
-      >
+    <div
+      style={{ background: "url('/background/hero.svg')" }}
+      className="bg-no-repeat bg-center bg-cover h-screen top-0 absolute "
+    >
+      <section className=" max-w-screen mt-32 ">
         <div className="flex flex-col mx-auto items-center text-center justify-start  md:w-4/5">
           <a
             href=""
-            className="bg-primaryBlack py-2 px-4 mb-7  rounded border-secondaryWhite border-2  text-primaryGreen w-fit"
+            className="bg-primaryBlack py-2 px-4 mb-7 text-xs rounded border-secondaryWhite border-2  text-primaryGreen w-fit"
           >
             wide variaty gamees
           </a>
-          <p className="text-white text-5xl mb-5 font-semibold uppercase">
+          <p className="text-white md:text-5xl text-3xl mb-5 font-semibold uppercase">
             ELEVATE YOUR GAMEPLAY WITH OUR CHEATS FOR{" "}
             <span className="text-primaryPurple">RUST</span>
           </p>
@@ -34,6 +36,7 @@ function Hero() {
             </Button>
           </div>
         </div>
+        <DeatilsContainer />
       </section>
     </div>
   );

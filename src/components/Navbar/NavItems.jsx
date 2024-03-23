@@ -63,7 +63,7 @@ function NavItems() {
       </nav>
       {isOpen && (
         <div className="flex flex-col h-screen items-start justify-start basis-full ">
-          {/* <NavLink /> */}
+         
           <MenuItems />
           <NavbarButton />
         </div>
