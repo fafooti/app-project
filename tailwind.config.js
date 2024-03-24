@@ -27,6 +27,12 @@ module.exports = {
         moderat: ["Moderat"],
         arame: ["Arame"],
       },
+      fontSize: {
+        42: "42px",
+      },
+      lineHeight: {
+        44.65: "44.65px",
+      },
     },
   },
   plugins: [],

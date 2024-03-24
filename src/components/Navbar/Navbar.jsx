@@ -10,7 +10,7 @@ function Navbar() {
       style={{
         background: "linear-gradient(rgba(21, 22, 27, 1),rgba(24, 25, 30, 1))",
       }}
-      className=" fixed top-0 z-[20] border-b border-secondaryWhite flex flex-wrap w-full items-center md:justify-center justify-between py-7 md:py-4   "
+      className=" fixed top-0 z-30 border-b border-secondaryWhite flex flex-wrap w-full items-center md:justify-center justify-between py-7 md:py-4   "
     >
       <div className="flex items-center justify-start  ">
         <Image width={30} height={20} src={logo} />

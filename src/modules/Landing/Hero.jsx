@@ -4,13 +4,14 @@ import icon from "/public/icons/buttonicon.svg";
 import "./hero";
 import DetailsCard from "./DetailsCard";
 import DeatilsContainer from "./DeatilsContainer";
+import PopularProducts from "./PopularProducts";
 function Hero() {
   return (
     <div
       style={{ background: "url('/background/hero.svg')" }}
-      className="bg-no-repeat bg-center bg-cover h-screen top-0 absolute "
+      className="!bg-no-repeat bg-center !bg-cover  h-screen -mt-32  "
     >
-      <section className=" max-w-screen mt-32 ">
+      <section className=" mt-32 ">
         <div className="flex flex-col mx-auto items-center text-center justify-start  md:w-4/5">
           <a
             href=""
@@ -36,7 +37,11 @@ function Hero() {
             </Button>
           </div>
         </div>
-        <DeatilsContainer />
+        {/* <div className=""> */}
+        {/* <DeatilsContainer /> */}
+        {/* </div> */}
+
+        <div></div>
       </section>
     </div>
   );
