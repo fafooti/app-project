@@ -22,6 +22,7 @@ module.exports = {
         secondaryPurple: "#9690AD",
         primaryGray: "#666F78",
         secondaryBlack: "#191A20",
+        secondaryGray: "#626971",
       },
       fontFamily: {
         moderat: ["Moderat"],

@@ -13,18 +13,24 @@ import faq from "/public/icons/faq.svg"
 import close from "/public/icons/close.svg"
 const NavLink = () => {
   return (
-    <div className="flex items-center gap-8 text-sm pl-8">
-      <Link href="/" className="flex items-center gap-2">
+    <div className="flex items-center gap-8 text-sm pl-8 ">
+      <Link href="/" className="flex items-center gap-2 ">
         <Image width={10} height={10} src={store} />
-        Store
+        <span className="hover:border-b-2 border-primaryGray">Store</span>
       </Link>
-      <Link href="/about" className="flex items-center gap-2 ">
+      <Link
+        href="/about"
+        className="flex items-center gap-2 "
+      >
         <Image width={10} height={10} src={status} />
-        Status
+        <span className="hover:border-b-2 border-primaryGray"> Status</span>
       </Link>
-      <Link href="/about" className="flex items-center gap-2">
+      <Link
+        href="/about"
+        className="flex items-center gap-2"
+      >
         <Image width={10} height={10} src={faq} />
-        FAQ
+        <span className="hover:border-b-2 border-primaryGray"> FAQ</span>
       </Link>
     </div>
   );

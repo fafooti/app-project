@@ -3,9 +3,9 @@ import PopularProductCard from './ProductCard'
 
 function PopularProducts() {
   return (
-    <div className=" ">
-      <div className=" flex flex-col justify-center items-center text-center gap-6 p-7 ">
-        <h2 className="text-white text-lg md:text-42 font-semibold leading-44.65 text-center pb-6">
+    
+      <div className=" flex flex-col  items-center text-center  p-7 ">
+        <h2 className="text-white text-xl md:text-42 font-semibold  text-center pb-6">
           our most <span className="text-primaryPurple ">popular</span> products
         </h2>
         <p className="w-2/3 font-moderat text-sm md:text-base text-secondaryPurple">
@@ -23,7 +23,7 @@ function PopularProducts() {
           <PopularProductCard />
         </div>
       </div>
-    </div>
+   
   );
 }
 

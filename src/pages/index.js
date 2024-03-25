@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <Layout>
       <main className="flex flex-col items-center justify-between max-w-screen   min-h-screen">
-        <div className="">
+        <div className="w-11/12 mx-auto">
           <Hero />
           <DeatilsContainer />
         </div>
-        <div className="w-11/12 mx-auto bg-red-300">
+        <div className="w-11/12 mx-auto ">
           <PopularProducts />
         </div>
       </main>

@@ -4,17 +4,19 @@ import Image from 'next/image'
 import { Button } from '@/components'
 function PopularProductCard() {
   return (
-    <div className='flex flex-col w-fit justify-center h-full'>
-      <div className='w-[280px] h-[158px] bg-center bg-cover rounded-5'>
-        <img src={product.src} />
+    <div className="flex flex-col w-fit justify-center h-full gap-4">
+      <div className="relative w-full aspect-w-16 aspect-h-9 ">
+        <Image className='rounded' width={280} height={158} src={product.src} />
       </div>
-      <div className='flex justify-between'>
-        <p>Rust</p>
-        <p>4 items</p>
+      <div className="flex justify-between">
+        <p className="text-white ">Rust</p>
+        <p className="text-secondaryGray">4 items</p>
       </div>
-      <Button className='text-center bg-primaryBlack hover:bg-primaryPurple border border-secondaryWhite text-sm py-1'>view All</Button>
+      <Button className="text-center bg-primaryBlack hover:bg-primaryPurple border text-white border-secondaryWhite ">
+        view All
+      </Button>
     </div>
-  )
+  );
 }
 
 export default PopularProductCard

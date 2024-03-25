@@ -10,7 +10,7 @@ function DetailsCard({ icon, title, desc }) {
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="z-20 bg-secondaryBlack text-left flex flex-col gap-3 pl-7 pr-5 py-7 border-t border-secondaryWhite relative w-full h-full hover:border-t-primaryPurple  "
+        className="z-20 bg-secondaryBlack text-left flex flex-col gap-4 pl-5 pr-7 py-7 border-t border-secondaryWhite relative w-full h-full hover:border-t-primaryPurple  "
       >
         <div
           className={`bg-white absolute -top-0.5 w-2.5 left-0 h-0.5 ${
@@ -21,7 +21,7 @@ function DetailsCard({ icon, title, desc }) {
           <Image width={17.5} height={15.5} src={status} />
           <p className="text-white">{title}</p>
         </div>
-        <p className=" text-primaryGray max-w-72">{desc}</p>
+        <p className=" text-primaryGray max-w-64 ">{desc}</p>
       </div>
       <div
         className={`absolute z-0 top-2 -left-2 w-full h-3/4 px-32 ${
