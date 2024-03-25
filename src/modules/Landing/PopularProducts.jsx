@@ -1,13 +1,11 @@
 import React from 'react'
-import PopularProductCard from './PopularProductCard'
+import PopularProductCard from './ProductCard'
 
 function PopularProducts() {
   return (
-    <div className=" w-5/6 h-full mx-auto relative">
-       
-      <div className=" flex flex-col justify-center items-center text-center   ">
-        
-        <h2 className="text-white text-lg md:text-42 font-semibold leading-44.65 text-center">
+    <div className=" ">
+      <div className=" flex flex-col justify-center items-center text-center gap-6 p-7 ">
+        <h2 className="text-white text-lg md:text-42 font-semibold leading-44.65 text-center pb-6">
           our most <span className="text-primaryPurple ">popular</span> products
         </h2>
         <p className="w-2/3 font-moderat text-sm md:text-base text-secondaryPurple">
@@ -15,15 +13,15 @@ function PopularProducts() {
           where that LEDX is on Interchange, we've got you covered with our
           range of high-quality products!
         </p>
-      </div>
-      <div className="grid md:grid-cols-2  xl:grid-cols-4 gap-7 w-5/6 mx-auto pb-20">
-        <PopularProductCard />
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 pt-16 ">
+          <PopularProductCard />
 
-        <PopularProductCard />
+          <PopularProductCard />
 
-        <PopularProductCard />
+          <PopularProductCard />
 
-        <PopularProductCard />
+          <PopularProductCard />
+        </div>
       </div>
     </div>
   );
