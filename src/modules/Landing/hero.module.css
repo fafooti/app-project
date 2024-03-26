@@ -1,0 +1,25 @@
+.slideshow {
+height: 150px;
+   
+   
+    height: 100%;
+ overflow:hidden ;
+}
+.item{
+    height: 150px;
+}
+.move{
+    left: 0%;
+    top: 0%;
+    animation: moveslide 5s linear infinite alternate;
+}
+@keyframes moveslide {
+from {
+        left: 0%;
+    }
+
+    to {
+        left: -100%;
+    } /*The width of the page needs to be taken into consideration*/
+        
+}

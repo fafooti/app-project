@@ -2,6 +2,7 @@ import Layout from "@/layouts/Layout";
 import DeatilsContainer from "@/modules/Landing/DeatilsContainer";
 import Hero from "@/modules/Landing/Hero";
 import PopularProducts from "@/modules/Landing/PopularProducts";
+import Slider from "@/modules/Landing/Slider";
 import VideoContainer from "@/modules/Landing/VideoContainer";
 // import DeatilsContainer from "@/modules/Landing/DeatilsContainer";
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
       <main className="flex flex-col  items-center justify-between max-w-screen min-h-screen">
         <div
           style={{ background: "url('/background/hero.svg')" }}
-          className="!bg-no-repeat  !bg-cover   pb-[160px] "
+          className="!bg-no-repeat  !bg-cover    "
         >
           <div className="min-w-screen mx-auto pt-16">
             <Hero />
@@ -21,6 +22,7 @@ export default function Home() {
         <div className=" w-11/12 mx-auto flex flex-col items-center ">
           <PopularProducts />
           <VideoContainer />
+          <Slider/>
         </div>
       </main>
     </Layout>
