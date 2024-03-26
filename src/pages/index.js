@@ -4,7 +4,7 @@ import Hero from "@/modules/Landing/Hero";
 import PopularProducts from "@/modules/Landing/PopularProducts";
 import Slider from "@/modules/Landing/Slider";
 import VideoContainer from "@/modules/Landing/VideoContainer";
-// import DeatilsContainer from "@/modules/Landing/DeatilsContainer";
+
 export default function Home() {
   return (
     <Layout>

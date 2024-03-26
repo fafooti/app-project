@@ -29,11 +29,11 @@ function VideoContainer() {
     };
 
   return (
-    <div className=" pt-16 flex lg:flex-row  justify-between items-center  md:w-full xl:max-w-7xl lg:gap-2 lg:px-8 flex-col gap-4">
-      <div className="w-full lg:w-[697px] h-[200px] md:h-[394px] ">
+    <div className=" pt-16 flex lg:flex-row   justify-between items-center  md:w-full xl:max-w-7xl lg:gap-2 lg:px-8 flex-col md:gap-4 gap-16 ">
+      <div className="w-full lg:w-[697px]  md:h-[394px] pb-3 ">
         <Image width={697} height={394} src={video} />
       </div>
-      <div className=" lg:max-w-[404px] flex flex-col gap-8 ">
+      <div className=" lg:max-w-[404px]   flex flex-col gap-8 ">
         {items.map((item) => (
           <VideoDetails
             key={item.id}

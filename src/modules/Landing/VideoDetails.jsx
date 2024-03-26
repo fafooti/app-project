@@ -6,7 +6,7 @@ function VideoDetails({ id, title, desc, isActive, onItemClick }) {
      };
   return (
     <div
-      className={` flex flex-col flex-wrap pl-5  ${
+      className={` flex flex-col  pl-5  ${
         isActive ? "border-l border-primaryPurple" : ""
       } `}
       onClick={handleClick}
