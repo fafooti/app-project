@@ -7,14 +7,20 @@ import VideoContainer from "@/modules/Landing/VideoContainer";
 export default function Home() {
   return (
     <Layout>
-      <main className="flex flex-col items-center justify-between max-w-screen   min-h-screen">
-        <div className="w-11/12 mx-auto">
-          <Hero />
-          <DeatilsContainer />
+      <main className="flex flex-col  items-center justify-between max-w-screen min-h-screen">
+        <div
+          style={{ background: "url('/background/hero.svg')" }}
+          className="!bg-no-repeat bg-center !bg-cover  h-screen -mt-32  "
+        >
+          <div className="min-w-screen mx-auto pt-16">
+            <Hero />
+            <DeatilsContainer />
+          </div>
         </div>
-        <div className="w-11/12 mx-auto ">
+
+        <div className="w-11/12 mx-auto flex flex-col items-center ">
           <PopularProducts />
-          <VideoContainer/>
+          <VideoContainer />
         </div>
       </main>
     </Layout>

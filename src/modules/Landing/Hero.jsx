@@ -8,10 +8,8 @@ import PopularProducts from "./PopularProducts";
 function Hero() {
   return (
     <div
-      style={{ background: "url('/background/hero.svg')" }}
-      className="!bg-no-repeat bg-center !bg-cover  h-screen -mt-32  "
-    >
-      <section className=" mt-32 ">
+     >
+      <section className=" my-32 w-screen ">
         <div className="flex flex-col mx-auto items-center text-center justify-start  md:w-4/5">
           <a
             href=""

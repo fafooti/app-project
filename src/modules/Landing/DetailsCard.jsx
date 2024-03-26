@@ -17,7 +17,7 @@ function DetailsCard({ icon, title, desc }) {
             isHovered ? "opacity-0" : ""
           } `}
         ></div>
-        <div className="flex items-center gap-2.5 pt-2">
+        <div className="flex items-center gap-2.5 pt-2.5">
           <Image width={17.5} height={15.5} src={status} />
           <p className="text-white">{title}</p>
         </div>
