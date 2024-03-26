@@ -28,7 +28,7 @@ const info = [
 ];
 function DeatilsContainer() {
   return (
-    <div className="grid md:grid-cols-2  xl:grid-cols-4 gap-8 pb-20 md:w-4/5 xl:max-w-7xl max-w-[90%] mx-auto ">
+    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 pb-20 md:w-4/5 xl:max-w-7xl max-w-[90%] mx-auto pt-32 ">
       {info.map((item) => (
         <DetailsCard title={item.title} desc={item.desc} />
       ))}

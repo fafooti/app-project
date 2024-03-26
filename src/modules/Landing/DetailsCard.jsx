@@ -6,7 +6,7 @@ function DetailsCard({ icon, title, desc }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative z-20 ">
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

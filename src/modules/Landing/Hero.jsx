@@ -9,8 +9,8 @@ function Hero() {
   return (
     <div
      >
-      <section className=" my-32 w-screen ">
-        <div className="flex flex-col mx-auto items-center text-center justify-start  md:w-4/5">
+      <section className="  w-screen ">
+        <div className="flex flex-col mx-auto items-center text-center justify-start pt-16 md:w-4/5">
           <a
             href=""
             className="bg-primaryBlack py-2 px-4 mb-7 text-xs rounded border-secondaryWhite border-2  text-primaryGreen w-fit"
@@ -21,7 +21,7 @@ function Hero() {
             ELEVATE YOUR GAMEPLAY WITH OUR CHEATS FOR{" "}
             <span className="text-primaryPurple">RUST</span>
           </p>
-          <p className="text-secondaryPurple  md:max-w-2/5 mb-8 font-moderat text-lg font-medium ">
+          <p className="text-secondaryPurple  md:max-w-2/5 mb-8 font-moderat text-lg  ">
             SSZ Solutions offers high-quality, reliable products for amazing
             prices and the best customer
           </p>
