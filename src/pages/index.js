@@ -8,7 +8,7 @@ import VideoContainer from "@/modules/Landing/VideoContainer";
 export default function Home() {
   return (
     <Layout>
-      <main className="flex flex-col  items-center justify-between max-w-screen min-h-screen">
+      <main className="flex flex-col  items-center justify-between max-w-screen min-h-screen overflow-hidden">
         <div
           style={{ background: "url('/background/hero.svg')" }}
           className="!bg-no-repeat  !bg-cover    "
