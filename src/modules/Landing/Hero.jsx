@@ -35,11 +35,8 @@ function Hero() {
             </Button>
           </div>
         </div>
-        {/* <div className=""> */}
-        {/* <DeatilsContainer /> */}
-        {/* </div> */}
+        
 
-        <div></div>
       </section>
     </div>
   );
