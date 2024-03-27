@@ -1,11 +1,11 @@
 
 .slideshow {
-        overflow: hidden;
+        overflow-x: auto;
         position: relative; 
 }
 
 .move {
-    transition: transform 0.5s ease;
+     transition: opacity 0.5s ease;
         animation: scroll 15s linear infinite;
 }
 @keyframes scroll {

@@ -59,16 +59,29 @@ const data = [
 ];
 function Slider() {
   return (
-    <div
-      className={`grid md:grid-cols-3 gap-3 grid-col-1 relative mt-20  md:w-full xl:max-w-7xl ${style.slideshow} `}
-
-    >
-       
-      {data.map((item) => (
-        <div key={item.id} className={`w-full my-4 h-full ${style.move}`}>
-          <Slide name={item.name} rate={item.rate} desc={item.desc} />
+    <div className="py-20 flex flex-col ">
+      <div className="flex flex-col w-full justify-center items-center">
+        <div className="text-center ">
+          <p className="text-white lg:max-w-[855px]  md:text-42 lg:text-5xl font-semibold text-xl ">
+            WHAT <span className="text-primaryPurple">OUR CUSTOMERS</span> HAVE
+            TO SAY ABOUT OUR PRODUCTS
+          </p>
+          <p className="text-base font-medium text-secondaryPurple pt-7">
+            Still don’t believe in our products? See what our customer have to
+            say.
+          </p>
         </div>
-      ))}
+      </div>
+
+      <div
+        className={`grid md:grid-cols-2 lg:grid-cols-3  gap-x-8  gap-y-5 grid-col-1 relative mt-20  md:w-full xl:max-w-7xl ${style.slideshow} `}
+      >
+        {data.map((item) => (
+          <div key={item.id} className={` mx-auto h-full ${style.move}`}>
+            <Slide name={item.name} rate={item.rate} desc={item.desc} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

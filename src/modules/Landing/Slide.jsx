@@ -9,24 +9,23 @@ function Slide({ name, rate, desc }) {
    const hasHalfStar = rate - filledStars >= 0.5;
   return (
     <div
-      className={`bg-secondaryBlack p-5 w-full justify-center h-full gap-4  flex flex-col border-x border-dashed`}
+      className={`bg-secondaryBlack py-4 px-6 w-fit justify-center h-[166px] gap-4  flex flex-col border-x border-dashed border-[#666F78]/[12%]`}
     >
-      <div className="flex justify-between">
+      <div className="flex item-center justify-between">
         <p className="text-lg text-white">{name}</p>
-        <div className="flex">
-           {[...Array(starCount)].map((_, index) => {
-          if (index < filledStars) {
-            return <Image width={16.75} height={15.75} src={filledStar} />;
-          } else if (index === filledStars && hasHalfStar) {
-            return <Image width={16.75} height={15.75} src={filledStar} />;
-          } else {
-            return <Image width={16.75} height={15.75} src={emptyStar} />;
-          }
-        })}
+        <div className="flex gap-0.5">
+          {[...Array(starCount)].map((_, index) => {
+            if (index < filledStars) {
+              return <Image width={16.75} height={15.75} src={filledStar} />;
+            } else if (index === filledStars && hasHalfStar) {
+              return <Image width={16.75} height={15.75} src={filledStar} />;
+            } else {
+              return <Image width={16.75} height={15.75} src={emptyStar} />;
+            }
+          })}
         </div>
-       
       </div>
-      <div className="text-primaryGray max-w-[341px] ">
+      <div className="text-primaryGray text-base max-w-[341px] ">
         <p>{desc}</p>
       </div>
     </div>
