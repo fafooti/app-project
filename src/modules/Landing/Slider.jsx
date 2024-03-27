@@ -61,9 +61,9 @@ function Slider() {
   return (
     <div className="py-20 flex flex-col ">
       <div className="flex flex-col w-full justify-center items-center">
-        <div className="text-center ">
-          <p className="text-white lg:max-w-[855px]  md:text-42 lg:text-5xl font-semibold text-xl ">
-            WHAT <span className="text-primaryPurple">OUR CUSTOMERS</span> HAVE
+        <div className="text-center lg:w-[855px]  inline">
+          <p className="text-white md:text-42 lg:text-5xl font-semibold text-xl ">
+            WHAT <span className="text-primaryPurple ">OUR CUSTOMERS</span> HAVE
             TO SAY ABOUT OUR PRODUCTS
           </p>
           <p className="text-base font-medium text-secondaryPurple pt-7">
