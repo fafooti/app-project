@@ -65,7 +65,7 @@ export default function App({ Component, pageProps }) {
     <main
       className={`min-h-screen   ${arame?.className} `}
     >
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </main>
   );
 }
