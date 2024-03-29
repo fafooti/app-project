@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="border-t border-secondaryWhite pt-4">
-      <div className=" flex md:flex-row flex-col justify-between gap-4 text-xs lg:text-sm w-[95%] xl:w-[90%] lg:w-[80%] md:w-[91%]  mx-auto ">
+    <div className="border-t border-secondaryWhite py-6">
+      <div className=" flex md:flex-row flex-col justify-between  gap-4 text-xs lg:text-sm w-[95%]  lg:w-[80%] md:w-[91%]  mx-auto  ">
         <div className="  flex flex-col  md:flex-row gap-2 md:items-center  ">
           <p className="text-white pl-4 md:pl-0">SSZ.GG</p>
           <p className=" text-center text-secondaryGray">

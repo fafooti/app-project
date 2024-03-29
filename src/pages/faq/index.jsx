@@ -34,34 +34,31 @@ const faqData = [
   },
 ];
 function index() {
-  const [openFaqId, setOpenFaqId] = useState(null);
-  const handleToggleFaq = (id) => {
-    setOpenFaqId(openFaqId === id ? null : id);
-  };
+
 
   return (
     <Layout>
       <div
         style={{ background: "url('/background/hero.svg')" }}
-        className="!bg-no-repeat !bg-contain h-screen  mx-auto  "
+        className="!bg-no-repeat !bg-contain xl:w-[1216px]  w-11/12 min-h-screen  mx-auto  py-28 "
       >
-        <div className="flex flex-col mx-auto items-center text-center justify-start pt-24 md:w-4/5">
+        <div className="flex flex-col mx-auto items-center text-center justify-start pt-24 pb-10 md:w-4/5">
           <p className="text-white md:text-5xl text-3xl mb-5 font-semibold uppercase">
-            our products
+            FREQUENTLY ASKED QUESTIONS
           </p>
-          <p className="text-secondaryPurple  md:max-w-2/5 mb-8 font-moderat text-lg  ">
-            SSZ Solutions offers high-quality, reliable products for amazing
-            prices and the best customer
+          <p className="text-secondaryPurple  md:w-[713px] mb-8 font-moderat text-lg  ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
           </p>
         </div>
-        <div className="flex flex-col gap-4 ">
+        <div className="flex flex-col gap-4 pt-20">
           {faqData.map((item) => (
             <Faq
               key={item.id}
               question={item.question}
               answer={item.answer}
-              isOpen={openFaqId === item.id}
-              toggleFAQ={() => handleToggleFaq(item.id)}
+          
             />
           ))}
         </div>
