@@ -1,4 +1,4 @@
-import Faq from "@/components/FAQ/Faq";
+import Faq from "@/modules/FAQ/Faq";
 import Layout from "@/layouts/Layout";
 import React, { useState } from "react";
 const faqData = [
