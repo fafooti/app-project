@@ -30,13 +30,15 @@ module.exports = {
       },
       fontSize: {
         42: "42px",
-        22:"22px"
+        22: "22px",
       },
       lineHeight: {
         44.65: "44.65px",
       },
+      screens: {
+        1440: "1400px",
+      },
     },
   },
   plugins: [],
-  
 };
