@@ -24,7 +24,7 @@ function DetailsCard({  title, desc }) {
         <p className=" text-primaryGray max-w-64 ">{desc}</p>
       </div>
       <div
-        className={`absolute z-0 -bottom-1 -right-2 w-4/5 h-4/5 px-32 ${
+        className={`absolute z-0 -bottom-2 -right-2 w-[280px] h-[180px] px-32 ${
           isHovered ? "border" : ""
         }  border-primaryPurple z-0`}
       ></div>

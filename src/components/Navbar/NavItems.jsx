@@ -19,14 +19,14 @@ const NavLink = () => {
         <span className="hover:border-b-2 border-primaryGray">Store</span>
       </Link>
       <Link
-        href="/about"
+        href="/status"
         className="flex items-center gap-2 "
       >
         <Image width={10} height={10} src={status} />
         <span className="hover:border-b-2 border-primaryGray"> Status</span>
       </Link>
       <Link
-        href="/about"
+        href="/"
         className="flex items-center gap-2"
       >
         <Image width={10} height={10} src={faq} />
