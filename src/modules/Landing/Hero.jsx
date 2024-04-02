@@ -1,10 +1,6 @@
 import React from "react";
 import { Button } from "/src/components";
-import icon from "/public/icons/buttonicon.svg";
-import "./hero";
-import DetailsCard from "./DetailsCard";
-import DeatilsContainer from "./DeatilsContainer";
-import PopularProducts from "./PopularProducts";
+
 function Hero() {
   return (
     <div
