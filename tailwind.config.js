@@ -37,6 +37,7 @@ module.exports = {
       },
       screens: {
         1440: "1400px",
+        xs: { min: "200px", max: "470px" },
       },
     },
   },

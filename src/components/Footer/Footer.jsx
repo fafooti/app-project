@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -12,13 +13,13 @@ function Footer() {
           </p>
         </div>
         <div className=" text-secondaryGray flex gap-3 items-center text-sm justify-center md:justify-end whitespace-nowrap">
-          <a className="hover:text-white hover:underline" href="/">
+          <Link className="hover:text-white hover:underline" href="/">
             {" "}
             privacy policy |{" "}
-          </a>
-          <a className="hover:text-white hover:underline" href="/">
+          </Link>
+          <Link className="hover:text-white hover:underline" href="/">
             terms of service
-          </a>
+          </Link>
         </div>
       </div>
     </div>
