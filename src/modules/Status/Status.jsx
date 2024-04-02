@@ -21,7 +21,7 @@ function Status({title,details}) {
         <p className="text-xl text-white md:text-3xl">{title}</p>
          {
             details.map((item)=>(
-                 <div className="rounded md:text-22 text-sm bg-secondaryBlack w-full md:px-7 py-5 flex justify-between items-center border border-secondaryBlack">
+                 <div key={item.id} className="rounded md:text-22 text-sm bg-secondaryBlack w-full md:px-7 py-5 flex justify-between items-center border border-secondaryBlack">
           <p className={`text-white `} >{item.name}</p>
           <p className={getStatusColor(item.status)} >{item.status}</p>
         </div>

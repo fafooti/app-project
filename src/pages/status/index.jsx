@@ -3,30 +3,37 @@ import Status from "@/modules/Status/Status";
 import React from "react";
 const statuses = [
   {
+    id:1,
     title: "rust",
     details: [
       {
+        id: 1,
         name: "V6 Chair + Spoofer",
         status: "updating",
       },
       {
+        id: 2,
         name: "V6 Chair + Spoofer",
         status: "undetected",
       },
       {
+        id: 3,
         name: "V6 Chair + Spoofer",
         status: "undetected",
       },
     ],
   },
   {
+    id:2,
     title: "MODERN WARFARE",
     details: [
       {
+        id: 4,
         name: "SSZ SCRIPT",
         status: "use-at-own-risk",
       },
       {
+        id: 5,
         name: "SSZ SCRIPT",
         status: "detected",
       },
@@ -52,12 +59,9 @@ function index() {
           </p>
         </div>
         <div className="flex flex-col gap-5 pt-4">
-          {
-            statuses.map((item)=>(
-                   <Status title={item.title} details={item.details}/>
-            ))
-          }
-   
+          {statuses.map((item) => (
+            <Status key={item.id} title={item.title} details={item.details} />
+          ))}
         </div>
       </div>
     </Layout>
