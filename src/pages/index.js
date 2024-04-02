@@ -1,9 +1,9 @@
-import Layout from "@/layouts/Layout";
-import DeatilsContainer from "@/modules/Landing/DeatilsContainer";
-import Hero from "@/modules/Landing/Hero";
-import PopularProducts from "@/modules/Landing/PopularProducts";
-import Slider from "@/modules/Landing/Slider";
-import VideoContainer from "@/modules/Landing/VideoContainer";
+import Layout from "/src/layouts/Layout.jsx";
+import DeatilsContainer from "/src/modules/Landing/DeatilsContainer";
+import Hero from "/src/modules/Landing/Hero";
+import PopularProducts from "/src/modules/Landing/PopularProducts";
+import Slider from "/src/modules/Landing/Slider";
+import VideoContainer from "/src/modules/Landing/VideoContainer";
 
 export default function Home() {
   return (
