@@ -60,7 +60,9 @@ function index() {
         </div>
         <div className="flex flex-col gap-5 pt-4">
           {statuses.map((item) => (
-            <Status key={item.id} title={item.title} details={item.details} />
+            <div key={item.id}>
+              <Status title={item.title} details={item.details} />
+            </div>
           ))}
         </div>
       </div>
