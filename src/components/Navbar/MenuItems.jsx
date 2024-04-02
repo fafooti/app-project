@@ -4,8 +4,7 @@ import Image from "next/image";
 import store from "/public/icons/store.svg";
 import faq from "/public/icons/faq.svg"
 import status from "/public/icons/status.svg";
-import Navbar from "./Navbar";
-import NavbarButton from "./NavbarButton";
+
 function MenuItems() {
    
   return (

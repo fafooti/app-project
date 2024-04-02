@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "/src/components";
-
+import icon from "/public/icons/faq"
 function Hero() {
   return (
     <div

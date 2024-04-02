@@ -1,4 +1,4 @@
-import icon from "/public/icons/navbutton.svg";
+
 import store from "/public/icons/store.svg";
 import Image from "next/image";
 function NavbarButton() {

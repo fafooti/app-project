@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import status from "/public/icons/status.svg";
 
-function DetailsCard({ icon, title, desc }) {
+function DetailsCard({  title, desc }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
