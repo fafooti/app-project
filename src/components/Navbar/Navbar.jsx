@@ -14,7 +14,7 @@ function Navbar() {
     >
      
       <div className="flex items-center justify-start  ">
-        <Image width={30} height={20} src={logo} />
+        <Image width={30} height={20} src={logo} alt="logo" />
         <h2 className="text-white pl-2 text-lg md:text-md leading-6 "> SSZ.GG</h2>
       </div>
       

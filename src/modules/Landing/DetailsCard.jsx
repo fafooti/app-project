@@ -18,7 +18,7 @@ function DetailsCard({ icon, title, desc }) {
           } `}
         ></div>
         <div className="flex items-center gap-2.5 pt-2.5">
-          <Image width={17.5} height={15.5} src={status} />
+          <Image width={17.5} height={15.5} src={status} alt="details" />
           <p className="text-white">{title}</p>
         </div>
         <p className=" text-primaryGray max-w-64 ">{desc}</p>

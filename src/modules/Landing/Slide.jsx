@@ -16,11 +16,25 @@ function Slide({ name, rate, desc }) {
         <div className="flex gap-0.5">
           {[...Array(starCount)].map((_, index) => {
             if (index < filledStars) {
-              return <Image width={16.75} height={15.75} src={filledStar} />;
+              return <Image key={index} width={16.75} height={15.75} src={filledStar} />;
             } else if (index === filledStars && hasHalfStar) {
-              return <Image width={16.75} height={15.75} src={filledStar} />;
+              return (
+                <Image
+                  key={index}
+                  width={16.75}
+                  height={15.75}
+                  src={filledStar}
+                />
+              );
             } else {
-              return <Image width={16.75} height={15.75} src={emptyStar} />;
+              return (
+                <Image
+                  key={index}
+                  width={16.75}
+                  height={15.75}
+                  src={emptyStar}
+                />
+              );
             }
           })}
         </div>

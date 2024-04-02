@@ -6,7 +6,7 @@ function PopularProductCard({buttonText,items,title}) {
   return (
     <div className="flex flex-col w-fit justify-center h-full gap-4">
       <div className="relative ">
-        <Image className='rounded' width={280} height={158} src={product.src} />
+        <Image alt="product" className='rounded' width={280} height={158} src={product.src} />
       </div>
       <div className="flex justify-between">
         <p className="text-white ">
