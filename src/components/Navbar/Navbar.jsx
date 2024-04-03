@@ -34,7 +34,7 @@ function Navbar() {
       }}
       className=" fixed top-0 z-30 border-b border-secondaryWhite w-full "
     >
-      <div className=" flex justify-between items-center  xl:w-[1216px]  md:py-4 py-5 md:px-16 px-4 mx-auto">
+      <div className=" flex justify-between items-center  xl:w-[1216px]  md:py-4 py-5 md:px-1 px-4 mx-auto">
         <div className="flex justify-between items-center  ">
           <Link href="/">
             <Image width={30} height={20} src={logo} alt="logo" />
@@ -43,7 +43,7 @@ function Navbar() {
             SSZ.GG
           </h2>
         </div>
-        <nav className="flex w-2/3  md:justify-between justify-end  text-primaryGray">
+        <nav className="flex   md:justify-between justify-end  text-primaryGray">
           <div className="hidden md:flex  justify-center flex-grow">
             <div className="flex items-center gap-8 text-sm pl-8 ">
               <Link href="/" className="flex items-center gap-2 ">
