@@ -26,7 +26,7 @@ const NavLink = () => {
         <span className="hover:border-b-2 border-primaryGray"> Status</span>
       </Link>
       <Link
-        href="/"
+        href=""
         className="flex items-center gap-2"
       >
         <Image width={10} height={10} src={faq} />

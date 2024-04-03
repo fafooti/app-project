@@ -3,7 +3,7 @@ import PopularProductCard from './ProductCard'
 
 function PopularProducts() {
   return (
-    <div className=" flex flex-col  items-center text-center  p-7 ">
+    <div className=" flex flex-col  items-center text-center  ">
       <h2 className="text-white text-xl md:text-42 font-semibold  text-center pb-6">
         our most <span className="text-primaryPurple ">popular</span> products
       </h2>

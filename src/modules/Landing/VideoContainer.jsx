@@ -29,9 +29,9 @@ function VideoContainer() {
     };
 
   return (
-    <div className=" pt-16 flex lg:flex-row   justify-between items-center  md:w-full xl:max-w-7xl lg:gap-2 lg:px-8 flex-col md:gap-4 gap-16 ">
-      <div className="w-full lg:w-[697px]  md:h-[394px] pb-3 ">
-        <Image width={697} height={394} src={video} />
+    <div className=" mt-20 flex lg:flex-row  items-start  justify-between   md:w-full xl:max-w-7xl lg:gap-0 lg:px-8 flex-col md:gap-4 gap-16 ">
+      <div className="w-full lg:w-[697px] lg:h-[200px] md:h-[394px]  ">
+        <Image className="" width={697} height={294} src={video} />
       </div>
       <div className=" lg:max-w-[404px]   flex flex-col gap-8 ">
         {items.map((item) => (

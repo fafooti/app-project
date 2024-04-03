@@ -28,8 +28,8 @@ const info = [
 ];
 function DeatilsContainer() {
   return (
-    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 pb-20 max-w-[90%]  mx-auto pt-32 ">
-      {info.map((item,index) => (
+    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8  max-w-[90%] 1440:max-w-[1281px]  mx-auto pt-32 ">
+      {info.map((item, index) => (
         <DetailsCard key={index} title={item.title} desc={item.desc} />
       ))}
     </div>

@@ -29,12 +29,22 @@ module.exports = {
         arame: ["Arame"],
       },
       fontSize: {
-        42: "42px",
-        22: "22px",
+        42: ["42px", { lineHeight: "44.65px"},],
+        22: [
+          "22px",
+          {
+            lineHeight: "27.79px",
+          },
+        ],
+
+        52: [
+          "52px",
+          {
+            lineHeight: "55.28px",
+          },
+        ],
       },
-      lineHeight: {
-        44.65: "44.65px",
-      },
+
       screens: {
         1440: "1400px",
         xs: { min: "200px", max: "470px" },

@@ -59,14 +59,14 @@ const data = [
 ];
 function Slider() {
   return (
-    <div className="py-20 flex flex-col ">
+    <div className="pt-32 pb-32 flex flex-col gap-16">
       <div className="flex flex-col w-full justify-center items-center">
         <div className="text-center lg:w-[855px]  inline">
           <p className="text-white md:text-42 lg:text-5xl font-semibold text-xl ">
             WHAT <span className="text-primaryPurple ">OUR CUSTOMERS</span> HAVE
             TO SAY ABOUT OUR PRODUCTS
           </p>
-          <p className="text-base font-medium text-secondaryPurple pt-7">
+          <p className="md:text-base text-sm font-medium text-secondaryPurple pt-7">
             Still don’t believe in our products? See what our customer have to
             say.
           </p>
