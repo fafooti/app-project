@@ -16,7 +16,7 @@ function index() {
           <div className=" mx-auto pt-16">
             <ProductDetails />
           </div>
-          <div className=' xl:w-1/2  mx-auto' >
+          <div className='  mx-auto' >
             <Categories />
             <SearchInput />
           </div>

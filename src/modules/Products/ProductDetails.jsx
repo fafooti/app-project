@@ -15,9 +15,9 @@ function ProductDetails() {
             alignItems: "center",
             justifyContent: "center",
           }}
-          className='md:w-[504px] md:h-[191px] w-1/2 h-1/2'
+          className='md:w-[504px] xl:-mb-10 md:h-[191px] w-1/2 h-1/2'
         >
-          <p className="text-white md:text-42 text-2xl mb-5 font-semibold uppercase">
+          <p className="text-white md:text-42 text-2xl  font-semibold uppercase">
             our products
           </p>
         </div>
