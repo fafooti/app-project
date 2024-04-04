@@ -8,7 +8,7 @@ import React from 'react'
 function index() {
   return (
     <Layout>
-      {/* <div className="flex flex-col  items-center justify-between mx-auto  min-h-screen overflow-hidden"> */}
+      <div className="flex flex-col  items-center justify-between mx-auto  min-h-screen overflow-hidden">
         <div
           style={{ background: "url('/background/hero.svg')" }}
           className="!bg-no-repeat !bg-contain w-[90%] 1440:w-[1216px]   mx-auto  "
@@ -23,7 +23,7 @@ function index() {
           <div className=" mx-auto mt-8">
             <ProductsList />
           </div>
-        {/* </div> */}
+        </div>
       </div>
     </Layout>
   );

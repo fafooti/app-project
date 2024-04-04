@@ -7,6 +7,18 @@ function PopularProducts() {
       <h2 className="text-white text-xl md:text-42 font-semibold  text-center pb-6">
         our most <span className="text-primaryPurple ">popular</span> products
       </h2>
+      {/* <div
+        style={{
+          backgroundImage: "url('/icons/ellipse.svg')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+        className="md:w-[504px] md:h-[191px] w-1/2 h-1/2"
+      ></div> */}
       <p className="lg:w-2/3 font-moderat text-sm md:text-base text-secondaryPurple">
         Whether you need some aim assistance on Call of Duty, or need to know
         where that LEDX is on Interchange, weve got you covered with our range
