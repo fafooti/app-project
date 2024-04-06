@@ -2,8 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import logo from "/public/logo.svg";
 import Image from "next/image";
-import NavbarMenu from "./NavbarMenu";
-import NavItems from "./NavItems";
+
 import store from "/public/icons/store.svg";
 import close from "/public/icons/close.svg";
 import NavbarButton from "./NavbarButton";

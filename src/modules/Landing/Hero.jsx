@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "/src/components";
-import icon from "/public/icons/faq.svg"
+import cheat from "/public/icons/cheat.svg";
 function Hero() {
   return (
     <div>
@@ -22,7 +22,7 @@ function Hero() {
           </p>
           <div className="flex gap-2 justify-center  ">
             <Button className="text-white uppercase   bg-primaryPurple">
-              <img src={icon.src} />
+              <img src={cheat.src} />
               our Cheats
             </Button>
             <Button className="py-2.5 px-3.5 text-sm bg-primaryBlack uppercase border-2 border-secondaryWhite text-white ">

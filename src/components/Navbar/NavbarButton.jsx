@@ -1,5 +1,5 @@
-import icon from "/public/icons/navbutton.svg";
-import store from "/public/icons/store.svg";
+
+import cheat from "/public/icons/cheat.svg";
 import Image from "next/image";
 function NavbarButton() {
   return (
@@ -8,7 +8,7 @@ function NavbarButton() {
         Discorde
       </button>
       <button className=" flex rounded  w-full md:w-fit items-center justify-center gap-2 px-3 py-2 bg-primaryPurple text-xs  ">
-        <Image src={store} width={12} height={12} alt="icon" />
+        <Image src={cheat} alt="icon" />
         Our Cheats
       </button>
     </div>
