@@ -11,7 +11,7 @@ export default function Home() {
       <main className="flex flex-col  items-center justify-between max-w-screen min-h-screen overflow-hidden pb-9">
         <div
           style={{ background: "url('/background/hero.svg')" }}
-          className="!bg-no-repeat pb-[160px] !bg-cover   "
+          className="!bg-no-repeat w-full pb-[160px] !bg-cover   "
         >
           <div className="min-w-screen  pt-16">
             <Hero />
@@ -19,10 +19,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" w-11/12 mx-auto flex flex-col items-center ">
+        <div className=" w-11/12 mx-auto flex flex-col 1440:w-[1281px] items-center ">
           <PopularProducts />
           <VideoContainer />
-          <Slider/>
+          <Slider />
         </div>
       </main>
     </Layout>

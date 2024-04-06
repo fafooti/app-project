@@ -1,21 +1,70 @@
-
 .slideshow {
-        overflow-x: auto;
-        position: relative; 
+    overflow-x: auto;
+    position: relative;
 }
 
 .move {
-     transition: opacity 0.5s ease;
-        animation: scroll 15s linear infinite;
+    transition: opacity 0.5s ease;
+    animation: scroll 15s linear infinite;
 }
+
 @keyframes scroll {
     0% {
         transform: translateY(0);
-    
+
     }
 
     100% {
         transform: translateY(calc(-100% - 400px));
-       
+
     }
+}
+
+.glow::before {
+    content: "";
+    background: url("/icons/ellipse.svg");
+    background-position: center;
+    background-size: cover;
+    overflow: visible;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: -0%;
+    top: 70%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.glow::after {
+    content: "";
+    background: url("/icons/ellipse.svg");
+    background-position: center;
+    background-size: cover;
+    overflow: visible;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 90%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width:767px) {
+    .glow::after {
+        width: 404px;
+            height: 91px;
+    }
+    .glow::after{
+        left: 70%;
+        top: 50%;
+    }
+    .glow::before{
+        left: -10%;
+            top: 70%;
+    }
+
 }

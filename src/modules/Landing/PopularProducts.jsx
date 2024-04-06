@@ -1,24 +1,21 @@
 import React from 'react'
 import PopularProductCard from './ProductCard'
+import style from "./hero.module.css"
 
 function PopularProducts() {
   return (
     <div className=" flex flex-col  items-center text-center  ">
-      <h2 className="text-white text-xl md:text-42 font-semibold  text-center pb-6">
-        our most <span className="text-primaryPurple ">popular</span> products
+      <h2 className="text-white text-xl md:text-42 flex gap-4 justify-center max-w-full font-semibold  text-center pb-6">
+        <p className='whitespace-nowrap'>OUR MOST</p>
+        <div className="text-primaryPurple text-center z-10 relative">
+          <p className={`${style.glow}`}>POPULAR</p>
+        </div>
+        <p>
+           PRODUCTS
+        </p>
+       
       </h2>
-      {/* <div
-        style={{
-          backgroundImage: "url('/icons/ellipse.svg')",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
 
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-        className="md:w-[504px] md:h-[191px] w-1/2 h-1/2"
-      ></div> */}
       <p className="lg:w-2/3 font-moderat text-sm md:text-base text-secondaryPurple">
         Whether you need some aim assistance on Call of Duty, or need to know
         where that LEDX is on Interchange, weve got you covered with our range

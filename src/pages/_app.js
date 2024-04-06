@@ -63,7 +63,7 @@ const moderat = localFont({
 export default function App({ Component, pageProps }) {
   return (
     <main
-      className={`min-h-screen   ${arame?.className} `}
+      className={`min-h-screen   ${arame?.className}  `}
     >
       <Component {...pageProps} />
     </main>
