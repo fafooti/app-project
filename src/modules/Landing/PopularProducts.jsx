@@ -1,7 +1,7 @@
 import React from 'react'
-import PopularProductCard from './ProductCard'
-import style from "./hero.module.css"
 
+import style from "./hero.module.css"
+import ProductCard from '@/components/ProductCard/ProductCard';
 function PopularProducts() {
   return (
     <div className=" flex flex-col  items-center text-center  ">
@@ -22,11 +22,11 @@ function PopularProducts() {
         of high-quality products!
       </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 pt-16 ">
-        <PopularProductCard buttonText="view all" items="4" title="title" />
+        <ProductCard buttonText="view all" items="4" title="title" />
 
-        <PopularProductCard buttonText="view all" items="4" title="title" />
-        <PopularProductCard buttonText="view all" items="4" title="title" />
-        <PopularProductCard buttonText="view all" items="4" title="title" />
+        <ProductCard buttonText="view all" items="4" title="title" />
+        <ProductCard buttonText="view all" items="4" title="title" />
+        <ProductCard buttonText="view all" items="4" title="title" />
       </div>
     </div>
   );

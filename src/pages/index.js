@@ -11,7 +11,7 @@ export default function Home() {
       <main className="flex flex-col  items-center justify-between max-w-screen min-h-screen overflow-hidden pb-9">
         <div
           style={{ background: "url('/background/hero.svg')" }}
-          className="!bg-no-repeat w-full pb-[160px] !bg-cover   "
+          className="!bg-no-repeat  pb-[160px] !bg-cover   "
         >
           <div className="min-w-screen  pt-16">
             <Hero />

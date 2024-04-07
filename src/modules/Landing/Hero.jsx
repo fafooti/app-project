@@ -7,16 +7,16 @@ function Hero() {
   return (
     <div>
       <section className="  w-wcreen pt-2 ">
-        <div className="flex flex-col mx-auto items-center text-center justify-center pt-16 md:w-[80%] 1440:w-[1013px]">
+        <div className="flex flex-col mx-auto items-center text-center justify-center pt-16 md:w-4/5 1440:w-[1013px]">
           <a
             href=""
             className=" bg-primaryBlack py-2 px-4 mb-7 text-xs rounded border-secondaryWhite border-2  text-primaryGreen w-fit"
           >
             wide variaty gamees
           </a>
-          <h1 className=" text-white md:text-52 text-3xl mb-5 inline-block font-semibold uppercase pt-7">
+          <h1 className="max-w-[1013px] text-white md:text-52 text-3xl mb-5 inline-block font-semibold uppercase pt-7">
             ELEVATE YOUR GAMEPLAY WITH OUR CHEATS FOR 
-            <span className="text-primaryPurple md:inline-block  ">
+            <span className="text-primaryPurple md:inline-block  ml-4">
               <Typewriter
                 options={{
                   strings: [

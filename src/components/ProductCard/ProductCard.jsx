@@ -1,17 +1,21 @@
-import React from 'react'
-import product from "/public/common/product.svg"
-import Image from 'next/image'
-import { Button } from '@/components'
-function PopularProductCard({buttonText,items,title}) {
+import React from "react";
+import product from "/public/common/product.svg";
+import Image from "next/image";
+import { Button } from "..";
+function ProductCard({ buttonText, items, title }) {
   return (
     <div className="flex flex-col w-fit justify-center h-full gap-4">
       <div className="relative ">
-        <Image alt="product" className='rounded' width={280} height={158} src={product.src} />
+        <Image
+          alt="product"
+          className="rounded"
+          width={280}
+          height={158}
+          src={product.src}
+        />
       </div>
       <div className="flex justify-between">
-        <p className="text-white ">
-          {title}
-        </p>
+        <p className="text-white ">{title}</p>
         <p className="text-secondaryGray">{items && items + "items"}</p>
       </div>
       <Button className="text-center text-xs lg:text-base bg-primaryBlack hover:bg-primaryPurple border text-white border-secondaryWhite ">
@@ -21,4 +25,4 @@ function PopularProductCard({buttonText,items,title}) {
   );
 }
 
-export default PopularProductCard
+export default ProductCard;
