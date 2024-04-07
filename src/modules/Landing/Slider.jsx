@@ -1,6 +1,8 @@
 import React from "react";
 import Slide from "./Slide";
 import style from "./hero.module.css";
+import Marquee from "react-fast-marquee";
+import shadow from "/public/common/shadow.svg";
 const data = [
   {
     id: 1,
@@ -61,7 +63,7 @@ function Slider() {
   return (
     <div className="pt-32 pb-32 flex flex-col gap-16">
       <div className="flex flex-col w-full justify-center items-center">
-        <div className="text-center lg:w-[855px]  inline">
+        <div className="text-center lg:w-[855px]   inline">
           <p className="text-white md:text-42 lg:text-5xl font-semibold text-xl ">
             WHAT <span className="text-primaryPurple ">OUR CUSTOMERS</span> HAVE
             TO SAY ABOUT OUR PRODUCTS
@@ -72,15 +74,35 @@ function Slider() {
           </p>
         </div>
       </div>
-
-      <div
-        className={`grid md:grid-cols-2 lg:grid-cols-3  gap-x-8  gap-y-5 grid-col-1 relative mt-20  md:w-full xl:max-w-7xl ${style.slideshow} `}
-      >
-        {data.map((item) => (
-          <div key={item.id} className={` mx-auto h-full ${style.move}`}>
-            <Slide name={item.name} rate={item.rate} desc={item.desc} />
-          </div>
-        ))}
+      <div className="relative">
+        <img
+          src={shadow.src}
+          className="top-1.5  md:-top-5 right-0 left-0 absolute  z-10"
+        />
+        <img
+          src={shadow.src}
+          className="bottom-1.5  md:-bottom-5 rotate-180 right-0 left-0 absolute  z-10"
+        />
+        <div className="overflow-hidden  ">
+          <Marquee
+            autoFill
+            direction="up"
+            style={{ width: "100%", height: "100%" }}
+          >
+            <div
+              className={`grid md:grid-cols-2 lg:grid-cols-3  gap-x-8  gap-y-5 grid-col-1 relative `}
+            >
+              {data.map((item, index) => (
+                <Slide
+                  key={index}
+                  name={item.name}
+                  rate={item.rate}
+                  desc={item.desc}
+                />
+              ))}
+            </div>
+          </Marquee>
+        </div>
       </div>
     </div>
   );

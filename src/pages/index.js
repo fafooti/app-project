@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" w-11/12 mx-auto flex flex-col 1440:w-[1281px] items-center ">
+        <div className="w-11/12 1440:w-[1281px] mx-auto" >
           <PopularProducts />
           <VideoContainer />
           <Slider />

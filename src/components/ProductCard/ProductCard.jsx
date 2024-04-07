@@ -18,7 +18,7 @@ function ProductCard({ buttonText, items, title }) {
         <p className="text-white ">{title}</p>
         <p className="text-secondaryGray">{items && items + "items"}</p>
       </div>
-      <Button className="text-center text-xs lg:text-base bg-primaryBlack hover:bg-primaryPurple border text-white border-secondaryWhite ">
+      <Button className="text-center  bg-primaryBlack hover:bg-primaryPurple border text-white border-secondaryWhite ">
         {buttonText}
       </Button>
     </div>
