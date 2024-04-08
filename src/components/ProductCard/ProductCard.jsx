@@ -7,7 +7,7 @@ import Skeleton from "../Skeleton/Skeleton";
 function ProductCard({ buttonText, items, title }) {
   return (
     <div className="flex flex-col w-fit justify-center h-full gap-4">
-      {/* <div className="relative ">
+      <div className="relative ">
         <Image
           alt="product"
           className="rounded"
@@ -15,11 +15,11 @@ function ProductCard({ buttonText, items, title }) {
           height={158}
           src={product.src}
         />
-      </div> */}
-      <Skeleton className={"relative w-[280px] h-[158px]"}/>
+      </div>
+      {/* <Skeleton className={"relative w-[280px] h-[158px]"}/> */}
       <div className="flex justify-between">
-        {/* <p className="text-white ">{title}</p> */}
-        <Skeleton className={"w-3 h-4"}/>
+        <p className="text-white ">{title}</p>
+        {/* <Skeleton className={"w-3 h-4"}/> */}
         <p className="text-secondaryGray">{items && items + "items"}</p>
       </div>
       <Button className="text-center  bg-primaryBlack hover:bg-primaryPurple border text-white border-secondaryWhite ">
