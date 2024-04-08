@@ -1,0 +1,13 @@
+.pulse{
+animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+    from {
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
