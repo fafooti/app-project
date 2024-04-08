@@ -58,7 +58,7 @@ function Navbar() {
                   Status
                 </span>
               </Link>
-              <Link href="" className="flex items-center gap-2">
+              <Link href="/faq" className="flex items-center gap-2">
                 <Image width={10} height={10} src={faq} />
                 <span className="hover:border-b-2 border-primaryGray">
                   {" "}
