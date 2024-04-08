@@ -33,7 +33,7 @@ function Product() {
         className="!bg-no-repeat !bg-cover mb-24 "
       >
         <div className="flex flex-col pt-32  1440:w-[1216px]  mx-4 md:mx-auto ">
-          <div className="  flex flex-col-reverse items-center lg:flex-row  gap-4 justify-between mb-8   ">
+          <div className=" mx-auto lg:w-[95%] xl:w-[82%] flex flex-col-reverse items-center lg:flex-row  gap-4 justify-between mb-8   ">
             <div className=" text-2xl font-semibold text-white">
               <p>title for image</p>
             </div>
