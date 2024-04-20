@@ -1,0 +1,582 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Product 1",
+      "image": "product1.jpg",
+      "price": 10,
+      "information": [
+        "Windows PCs Only",
+        "Built in Blocker/Spoofer",
+        "All Windows Versions Supported",
+        "Compatible with both Steam and Battlenet game launchers",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": [
+        "ESP",
+        "Chams",
+        "Radar",
+        "Crosshair",
+        "Grenade Trajectory",
+        "Spectator List",
+        "FOV Circle"
+      ],
+      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
+      "Misc": [
+        "Bunnyhop",
+        "Autostrafe",
+        "Auto Pistol",
+        "No Flash",
+        "Rank Revealer"
+      ],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "rust"
+    },
+    {
+      "id": 2,
+      "title": "Product 2",
+      "image": "product2.jpg",
+      "price": 15,
+      "information": [
+        "Windows PCs Only",
+        "All Windows Versions Supported",
+        "Compatible with both Steam and Origin game launchers",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": [
+        "ESP",
+        "Radar",
+        "Crosshair",
+        "Grenade Trajectory",
+        "Spectator List",
+        "FOV Circle"
+      ],
+      "AntiAim": ["Normal", "Slide Walk", "Edge Jump"],
+      "Misc": [
+        "Bunnyhop",
+        "Autostrafe",
+        "Auto Pistol",
+        "No Flash",
+        "Rank Revealer"
+      ],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "modern_warfare"
+    },
+    {
+      "id": 3,
+      "title": "Product 3",
+      "image": "product3.jpg",
+      "price": 20,
+      "information": [
+        "Windows PCs Only",
+        "All Windows Versions Supported",
+        "Compatible with Steam game launcher",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": [
+        "ESP",
+        "Chams",
+        "Radar",
+        "Crosshair",
+        "Spectator List",
+        "FOV Circle"
+      ],
+      "AntiAim": ["Normal", "Fake Duck", "Slide Walk"],
+      "Misc": [
+        "Bunnyhop",
+        "Autostrafe",
+        "Auto Pistol",
+        "No Flash",
+        "Rank Revealer"
+      ],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "rust"
+    },
+    {
+      "id": 4,
+      "title": "Product 4",
+      "image": "product4.jpg",
+      "price": 25,
+      "information": [
+        "Windows PCs Only",
+        "All Windows Versions Supported",
+        "Compatible with both Steam and Battlenet game launchers",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": [
+        "ESP",
+        "Chams",
+        "Radar",
+        "Crosshair",
+        "Grenade Trajectory",
+        "Spectator List",
+        "FOV Circle"
+      ],
+      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
+      "Misc": [
+        "Bunnyhop",
+        "Autostrafe",
+        "Auto Pistol",
+        "No Flash",
+        "Rank Revealer"
+      ],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "escape_from_tarkov"
+    },
+    {
+      "id": 5,
+      "title": "Product 5",
+      "image": "product5.jpg",
+      "price": 30,
+      "information": [
+        "Windows PCs Only",
+        "All Windows Versions Supported",
+        "Compatible with both Steam and Origin game launchers",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": [
+        "ESP",
+        "Chams",
+        "Radar",
+        "Crosshair",
+        "Grenade Trajectory",
+        "Spectator List",
+        "FOV Circle"
+      ],
+      "AntiAim": ["Normal", "Slide Walk", "Edge Jump"],
+      "Misc": [
+        "Bunnyhop",
+        "Autostrafe",
+        "Auto Pistol",
+        "No Flash",
+        "Rank Revealer"
+      ],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "dazy"
+    },
+    {
+      "id": 6,
+      "title": "Product 6",
+      "image": "product6.jpg",
+      "price": 35,
+      "information": [
+        "Windows PCs Only",
+        "All Windows Versions Supported",
+        "Compatible with Steam game launcher",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": ["ESP", "Chams", "Radar", "Grenade Trajectory", "FOV Circle"],
+      "AntiAim": ["Normal", "Fake Duck", "Slide Walk"],
+      "Misc": ["Bunnyhop", "Autostrafe", "Auto Pistol", "No Flash"],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "modern_warfare"
+    },
+    {
+      "id": 7,
+      "title": "Product 7",
+      "image": "product7.jpg",
+      "price": 40,
+      "information": [
+        "Windows PCs Only",
+        "Compatible with both Steam and Battlenet game launchers",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": [
+        "ESP",
+        "Radar",
+        "Crosshair",
+        "Grenade Trajectory",
+        "Spectator List",
+        "FOV Circle"
+      ],
+      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
+      "Misc": ["Bunnyhop", "Autostrafe", "No Flash", "Rank Revealer"],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "rust"
+    },
+    {
+      "id": 8,
+      "title": "Product 8",
+      "image": "product8.jpg",
+      "price": 45,
+      "information": [
+        "Windows PCs Only",
+        "All Windows Versions Supported",
+        "Compatible with both Steam and Origin game launchers",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": [
+        "ESP",
+        "Radar",
+        "Crosshair",
+        "Grenade Trajectory",
+        "Spectator List",
+        "FOV Circle"
+      ],
+      "AntiAim": ["Normal", "Slide Walk", "Edge Jump"],
+      "Misc": [
+        "Bunnyhop",
+        "Autostrafe",
+        "Auto Pistol",
+        "No Flash",
+        "Rank Revealer"
+      ],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "modern_warfare"
+    },
+    {
+      "id": 9,
+      "title": "Product 9",
+      "image": "product9.jpg",
+      "price": 50,
+      "information": [
+        "Windows PCs Only",
+        "Compatible with both Steam and Battlenet game launchers",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": [
+        "ESP",
+        "Chams",
+        "Radar",
+        "Grenade Trajectory",
+        "Spectator List",
+        "FOV Circle"
+      ],
+      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
+      "Misc": [
+        "Bunnyhop",
+        "Autostrafe",
+        "Auto Pistol",
+        "No Flash",
+        "Rank Revealer"
+      ],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "escape_from_tarkov"
+    },
+    {
+      "id": 10,
+      "title": "Product 10",
+      "image": "product10.jpg",
+      "price": 55,
+      "information": [
+        "Windows PCs Only",
+        "All Windows Versions Supported",
+        "Compatible with both Steam and Battlenet game launchers",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": [
+        "ESP",
+        "Chams",
+        "Radar",
+        "Crosshair",
+        "Grenade Trajectory",
+        "Spectator List",
+        "FOV Circle"
+      ],
+      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
+      "Misc": [
+        "Bunnyhop",
+        "Autostrafe",
+        "Auto Pistol",
+        "No Flash",
+        "Rank Revealer"
+      ],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "dazy"
+    },
+    {
+      "id": 11,
+      "title": "Product 11",
+      "image": "product11.jpg",
+      "price": 60,
+      "information": [
+        "Windows PCs Only",
+        "All Windows Versions Supported",
+        "Compatible with both Steam and Origin game launchers",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": [
+        "ESP",
+        "Chams",
+        "Radar",
+        "Crosshair",
+        "Grenade Trajectory",
+        "Spectator List",
+        "FOV Circle"
+      ],
+      "AntiAim": ["Normal", "Slide Walk", "Edge Jump"],
+      "Misc": [
+        "Bunnyhop",
+        "Autostrafe",
+        "Auto Pistol",
+        "No Flash",
+        "Rank Revealer"
+      ],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "modern_warfare"
+    },
+    {
+      "id": 12,
+      "title": "Product 12",
+      "image": "product12.jpg",
+      "price": 65,
+      "information": [
+        "Windows PCs Only",
+        "All Windows Versions Supported",
+        "Compatible with both Steam and Battlenet game launchers",
+        "Full Controller Support"
+      ],
+      "Aimbot": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "Targeting": [
+        "Normal",
+        "Silent Aim (Client & Server)",
+        "Aim Bone",
+        "Customisable Aimbot Keybind",
+        "Aimbot Override Bone",
+        "Auto Fire",
+        "Auto Wall"
+      ],
+      "visuals": [
+        "ESP",
+        "Chams",
+        "Radar",
+        "Crosshair",
+        "Grenade Trajectory",
+        "Spectator List",
+        "FOV Circle"
+      ],
+      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
+      "Misc": [
+        "Bunnyhop",
+        "Autostrafe",
+        "Auto Pistol",
+        "No Flash",
+        "Rank Revealer"
+      ],
+      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
+      "extras": [],
+      "forcesave": [],
+      "category": "escape_from_tarkov"
+    }
+  ]
+}
