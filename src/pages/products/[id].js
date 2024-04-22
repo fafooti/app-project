@@ -1,13 +1,22 @@
 import Image from "next/image";
-import React, { useState } from "react";
-import product from "/public/common/product.svg";
+
+import {useRouter} from "next/router"
+
 import Link from "next/link";
 import BackArrow from "/public/icons/backArrow.svg"
 import MediaTab from "@/modules/Product/MediaTab";
 import FeaturesTab from "@/modules/Product/FeaturesTab";
 import { Button } from "@/components";
 import Layout from "@/layouts/Layout";
+import productsData from "/src/pages/api/products.json";
+import React, { useEffect, useState } from "react";
+import Skeleton from "@/components/Skeleton/Skeleton";
+
 function Product() {
+    const [product, setProducts] = useState();
+  const router=useRouter()
+  const {id}=router.query;
+
   const [activeTab,setActiveTab]=useState("media")
   const [count ,setCount]=useState(1)
   const handleActiveTab=(tab)=>{
@@ -22,10 +31,16 @@ function Product() {
      }
      setCount((prev) => --prev);
    };
+
+       useEffect(() => {
+        if(id){
+          const productjSON =productsData.products.find((item)=>item.id===parseInt(id))
+          setProducts(productjSON);
+        }
+         console.log(productsData.products);
+      
+       }, [id]);
   
-
-
-
   return (
     <Layout>
       <div
@@ -47,8 +62,14 @@ function Product() {
           </div>
           <div className="  w-fit mx-auto  flex flex-col lg:flex-row items-start   justify-center gap-24 ">
             <div className=" flex justify-cente items-start  ">
-              
-              <Image src={product} width={475} height={268} alt="" />
+              {
+                product ?(
+
+                  <Image src={product.image} width={475} height={268} alt="" />
+                ):(
+                  <Skeleton className={`w-[475px] h-[268px]`}/>
+                )
+              }
             </div>
             <div className="flex  flex-col  sm:mx-auto lg:mx-0   xs:w-full w-[429px] items-center justify-center  gap-2 ">
               <div className="bg-secondaryBlack w-full rounded  border border-secondaryGray px-3 py-2 flex flex-col   ">

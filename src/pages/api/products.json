@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Product 1",
-      "image": "product1.jpg",
+        "image": "/common/product.svg",
       "price": 10,
       "information": [
         "Windows PCs Only",
@@ -55,7 +55,7 @@
     {
       "id": 2,
       "title": "Product 2",
-      "image": "product2.jpg",
+      "image": "/common/product.svg",
       "price": 15,
       "information": [
         "Windows PCs Only",
@@ -105,7 +105,7 @@
     {
       "id": 3,
       "title": "Product 3",
-      "image": "product3.jpg",
+      "image": "/common/product.svg",
       "price": 20,
       "information": [
         "Windows PCs Only",
@@ -155,7 +155,7 @@
     {
       "id": 4,
       "title": "Product 4",
-      "image": "product4.jpg",
+      "image": "/common/product.svg",
       "price": 25,
       "information": [
         "Windows PCs Only",
@@ -206,7 +206,7 @@
     {
       "id": 5,
       "title": "Product 5",
-      "image": "product5.jpg",
+      "image": "/common/product.svg",
       "price": 30,
       "information": [
         "Windows PCs Only",
@@ -257,7 +257,7 @@
     {
       "id": 6,
       "title": "Product 6",
-      "image": "product6.jpg",
+      "image": "/common/product.svg",
       "price": 35,
       "information": [
         "Windows PCs Only",
@@ -292,7 +292,7 @@
     {
       "id": 7,
       "title": "Product 7",
-      "image": "product7.jpg",
+      "image": "/common/product.svg",
       "price": 40,
       "information": [
         "Windows PCs Only",
@@ -333,7 +333,7 @@
     {
       "id": 8,
       "title": "Product 8",
-      "image": "product8.jpg",
+      "image": "/common/product.svg",
       "price": 45,
       "information": [
         "Windows PCs Only",
@@ -383,7 +383,7 @@
     {
       "id": 9,
       "title": "Product 9",
-      "image": "product9.jpg",
+      "image": "/common/product.svg",
       "price": 50,
       "information": [
         "Windows PCs Only",
@@ -430,7 +430,7 @@
     {
       "id": 10,
       "title": "Product 10",
-      "image": "product10.jpg",
+      "image": "/common/product.svg",
       "price": 55,
       "information": [
         "Windows PCs Only",
@@ -479,7 +479,7 @@
     {
       "id": 11,
       "title": "Product 11",
-      "image": "product11.jpg",
+      "image": "/common/product.svg",
       "price": 60,
       "information": [
         "Windows PCs Only",
@@ -530,7 +530,7 @@
     {
       "id": 12,
       "title": "Product 12",
-      "image": "product12.jpg",
+      "image": "/common/product.svg",
       "price": 65,
       "information": [
         "Windows PCs Only",

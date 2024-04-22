@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import product from "/public/common/product.svg";
+
 function Product() {
+  
   return (
     <>
       <div className=" flex justify-center  ">
