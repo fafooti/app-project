@@ -4,18 +4,25 @@ import ProductDetails from "@/modules/Products/ProductDetails";
 import ProductsList from "@/modules/Products/ProductsList";
 import SearchInput from "@/modules/Products/SearchInput";
 import React, { useEffect, useState } from "react";
+import productsData from "/src/pages/api/products.json";
 
 function index() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [products, setProducts] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
-  const handleSelectedcategory = (category) => {
-    setSelectedCategory(category);
+
+  const getAllProducts = () => {
+    console.log(productsData.products);
+  setProducts(productsData.products)
+  
   };
 
   const handleSearch = (query) => {
     setSearchQuery(query);
-    console.log("indescx",query);
+    console.log(query);
   };
+  useEffect(() => {
+   getAllProducts()
+  }, []);
   return (
     <Layout>
       <div className="flex flex-col  items-center justify-between mx-auto  min-h-screen overflow-hidden">
@@ -27,13 +34,14 @@ function index() {
             <ProductDetails />
           </div>
           <div className="  mx-auto">
-            <Categories onSelectedCategory={handleSelectedcategory} />
+            <Categories />
             <SearchInput onSearch={handleSearch} />
           </div>
           <div className=" mx-auto mt-8">
             <ProductsList
+              setProducts={setProducts}
+              products={products}
               searchQuery={searchQuery}
-              selectedCategory={selectedCategory}
             />
           </div>
         </div>

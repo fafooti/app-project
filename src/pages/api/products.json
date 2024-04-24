@@ -1,582 +1,242 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Product 1",
-        "image": "/common/product.svg",
-      "price": 10,
-      "information": [
-        "Windows PCs Only",
-        "Built in Blocker/Spoofer",
-        "All Windows Versions Supported",
-        "Compatible with both Steam and Battlenet game launchers",
-        "Full Controller Support"
+      "id": 177051,
+      "title": "MW3 | V6 Chair + Spoofer",
+      "slug": "mw3-v6-chair-spoofer",
+      "images": [
+        {
+          "path": "common/product.svg",
+          "metadata": {
+            "size": 1209286,
+            "filename": "PFkidtj4GBjBJ6NVT4EQC3LwEXepXxgDyqWFZMDc",
+            "extension": "gif",
+            "mime_type": "image/gif"
+          }
+        }
       ],
-      "Aimbot": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": [
-        "ESP",
-        "Chams",
-        "Radar",
-        "Crosshair",
-        "Grenade Trajectory",
-        "Spectator List",
-        "FOV Circle"
-      ],
-      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
-      "Misc": [
-        "Bunnyhop",
-        "Autostrafe",
-        "Auto Pistol",
-        "No Flash",
-        "Rank Revealer"
-      ],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "rust"
+      "other_settings": {
+        "video_url": "https://www.youtube.com/watch?v=CjUVbHmJDhI"
+      },
+      "additional_information": [],
+      "order": 1,
+      "variants": [
+        { "id": 194537, "title": "1 Day" },
+        { "id": 194538, "title": "1 Week" },
+        { "id": 194539, "title": "1 Month" },
+        { "id": 218781, "title": "3 Months" }
+      ]
     },
     {
-      "id": 2,
-      "title": "Product 2",
-      "image": "/common/product.svg",
-      "price": 15,
-      "information": [
-        "Windows PCs Only",
-        "All Windows Versions Supported",
-        "Compatible with both Steam and Origin game launchers",
-        "Full Controller Support"
+      "id": 185625,
+      "title": "MW3 | Unlock All + Spoofer",
+      "slug": "mw3-unlock-all-spoofer",
+      "images": [
+        {
+          "path": "common/product.svg",
+          "metadata": {
+            "size": 982642,
+            "filename": "zuaGbbIQ7Ke7yjr4OawjBbaWIKgcmDIJOnw0Fq4d",
+            "extension": "gif",
+            "mime_type": "image/gif"
+          }
+        }
       ],
-      "Aimbot": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": [
-        "ESP",
-        "Radar",
-        "Crosshair",
-        "Grenade Trajectory",
-        "Spectator List",
-        "FOV Circle"
-      ],
-      "AntiAim": ["Normal", "Slide Walk", "Edge Jump"],
-      "Misc": [
-        "Bunnyhop",
-        "Autostrafe",
-        "Auto Pistol",
-        "No Flash",
-        "Rank Revealer"
-      ],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "modern_warfare"
+      "other_settings": {
+        "badge": { "text": "UNDETECTED", "color": "#00ff1e" }
+      },
+      "additional_information": [],
+      "order": 5,
+      "variants": [
+        { "id": 202761, "title": "1 Day" },
+        { "id": 202762, "title": "1 Week" },
+        { "id": 202763, "title": "1 Month" },
+        { "id": 202764, "title": "Lifetime" }
+      ]
     },
     {
-      "id": 3,
-      "title": "Product 3",
-      "image": "/common/product.svg",
-      "price": 20,
-      "information": [
-        "Windows PCs Only",
-        "All Windows Versions Supported",
-        "Compatible with Steam game launcher",
-        "Full Controller Support"
+      "id": 190028,
+      "title": "COD | Multi-Blocker + Spoofer",
+      "slug": "cod-multi-blocker-spoofer",
+      "images": [
+        {
+          "path": "common/product.svg",
+          "metadata": {
+            "size": 898112,
+            "filename": "p9Cvr8jfMDFNQrcll7mbXfOl8MTYD3P1GWXAPcGS",
+            "extension": "gif",
+            "mime_type": "image/gif"
+          }
+        }
       ],
-      "Aimbot": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": [
-        "ESP",
-        "Chams",
-        "Radar",
-        "Crosshair",
-        "Spectator List",
-        "FOV Circle"
-      ],
-      "AntiAim": ["Normal", "Fake Duck", "Slide Walk"],
-      "Misc": [
-        "Bunnyhop",
-        "Autostrafe",
-        "Auto Pistol",
-        "No Flash",
-        "Rank Revealer"
-      ],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "rust"
+      "other_settings": [],
+      "additional_information": [],
+      "order": 6,
+      "variants": [
+        { "id": 206518, "title": "1 Day" },
+        { "id": 206519, "title": "1 Week" },
+        { "id": 206520, "title": "1 Month" }
+      ]
     },
     {
-      "id": 4,
-      "title": "Product 4",
-      "image": "/common/product.svg",
-      "price": 25,
-      "information": [
-        "Windows PCs Only",
-        "All Windows Versions Supported",
-        "Compatible with both Steam and Battlenet game launchers",
-        "Full Controller Support"
+      "id": 204608,
+      "title": "MW3 | AIO",
+      "slug": "mw3-aio",
+      "images": [
+        {
+          "path": "common/product.svg",
+          "metadata": {
+            "size": 1197782,
+            "filename": "QcbccaBe8oTwzDI5LKcDJBcvwvfVEz74LqsJOjeZ",
+            "extension": "gif",
+            "mime_type": "image/gif"
+          }
+        }
       ],
-      "Aimbot": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": [
-        "ESP",
-        "Chams",
-        "Radar",
-        "Crosshair",
-        "Grenade Trajectory",
-        "Spectator List",
-        "FOV Circle"
-      ],
-      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
-      "Misc": [
-        "Bunnyhop",
-        "Autostrafe",
-        "Auto Pistol",
-        "No Flash",
-        "Rank Revealer"
-      ],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "escape_from_tarkov"
+      "other_settings": [],
+      "additional_information": [],
+      "order": 7,
+      "variants": [
+        { "id": 220095, "title": "1 Day" },
+        { "id": 220096, "title": "1 Week" },
+        { "id": 220097, "title": "1 Month" },
+        { "id": 220098, "title": "Lifetime" }
+      ]
     },
     {
-      "id": 5,
-      "title": "Product 5",
-      "image": "/common/product.svg",
-      "price": 30,
-      "information": [
-        "Windows PCs Only",
-        "All Windows Versions Supported",
-        "Compatible with both Steam and Origin game launchers",
-        "Full Controller Support"
+      "id": 178391,
+      "title": "Rust | SSZ Script",
+      "slug": "rust-ssz-script",
+      "images": [
+        {
+          "path": "common/product.svg",
+          "metadata": {
+            "size": 626936,
+            "filename": "H9kRIRipvepz9QV2l7kVWZEQGXv9X9SWWDjNMInk",
+            "extension": "gif",
+            "mime_type": "image/gif"
+          }
+        }
       ],
-      "Aimbot": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": [
-        "ESP",
-        "Chams",
-        "Radar",
-        "Crosshair",
-        "Grenade Trajectory",
-        "Spectator List",
-        "FOV Circle"
-      ],
-      "AntiAim": ["Normal", "Slide Walk", "Edge Jump"],
-      "Misc": [
-        "Bunnyhop",
-        "Autostrafe",
-        "Auto Pistol",
-        "No Flash",
-        "Rank Revealer"
-      ],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "dazy"
+      "other_settings": { "video_url": "https://youtu.be/LLJBb7s75Xg" },
+      "additional_information": [],
+      "order": 8,
+      "variants": [
+        { "id": 195837, "title": "1 Week" },
+        { "id": 195838, "title": "1 Month" },
+        { "id": 195839, "title": "Lifetime" },
+        { "id": 217225, "title": "1 Day" }
+      ]
     },
     {
-      "id": 6,
-      "title": "Product 6",
-      "image": "/common/product.svg",
-      "price": 35,
-      "information": [
-        "Windows PCs Only",
-        "All Windows Versions Supported",
-        "Compatible with Steam game launcher",
-        "Full Controller Support"
+      "id": 208955,
+      "title": "R6 | Klar Lite",
+      "slug": "klar-lite",
+      "images": [
+        {
+          "path": "common/product.svg",
+          "metadata": {
+            "size": 643610,
+            "filename": "xSiy3LQ8kVky20xtx5dbI5pb54gU3YEr0DkZJKjZ",
+            "extension": "gif",
+            "mime_type": "image/gif"
+          }
+        }
       ],
-      "Aimbot": [
-        "Normal",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": ["ESP", "Chams", "Radar", "Grenade Trajectory", "FOV Circle"],
-      "AntiAim": ["Normal", "Fake Duck", "Slide Walk"],
-      "Misc": ["Bunnyhop", "Autostrafe", "Auto Pistol", "No Flash"],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "modern_warfare"
+      "other_settings": [],
+      "additional_information": [],
+      "order": 9,
+      "variants": [
+        { "id": 226529, "title": "1 Day" },
+        { "id": 226530, "title": "1 Week" },
+        { "id": 226531, "title": "1 Month" }
+      ]
     },
     {
-      "id": 7,
-      "title": "Product 7",
-      "image": "/common/product.svg",
-      "price": 40,
-      "information": [
-        "Windows PCs Only",
-        "Compatible with both Steam and Battlenet game launchers",
-        "Full Controller Support"
+      "id": 209661,
+      "title": "Apex | Disconnect External",
+      "slug": "apex-disconnect-external",
+      "images": [
+        {
+          "path": "common/product.svg",
+          "metadata": {
+            "size": 711475,
+            "filename": "5afDSG7ijGkEg7ThAwKCnS1hBJmEDDbR2a8paRFB",
+            "extension": "gif",
+            "mime_type": "image/gif"
+          }
+        }
       ],
-      "Aimbot": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": [
-        "ESP",
-        "Radar",
-        "Crosshair",
-        "Grenade Trajectory",
-        "Spectator List",
-        "FOV Circle"
-      ],
-      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
-      "Misc": ["Bunnyhop", "Autostrafe", "No Flash", "Rank Revealer"],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "rust"
+      "other_settings": {
+        "video_url": "https://www.youtube.com/watch?v=qDCSJs3ACKM"
+      },
+      "additional_information": [],
+      "order": 10,
+      "variants": [
+        { "id": 227135, "title": "1 Day" },
+        { "id": 227136, "title": "1 Week" },
+        { "id": 227138, "title": "1 Month" }
+      ]
     },
     {
-      "id": 8,
-      "title": "Product 8",
-      "image": "/common/product.svg",
-      "price": 45,
-      "information": [
-        "Windows PCs Only",
-        "All Windows Versions Supported",
-        "Compatible with both Steam and Origin game launchers",
-        "Full Controller Support"
+      "id": 204098,
+      "title": "EFT | Exozone",
+      "slug": "eft-exozone",
+      "images": [
+        {
+          "path": "common/product.svg",
+          "metadata": {
+            "size": 970387,
+            "filename": "FTtKu4VtgiQTOpOybY8vjBA6JWznesiGEGYe6NYP",
+            "extension": "gif",
+            "mime_type": "image/gif"
+          }
+        }
       ],
-      "Aimbot": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": [
-        "ESP",
-        "Radar",
-        "Crosshair",
-        "Grenade Trajectory",
-        "Spectator List",
-        "FOV Circle"
-      ],
-      "AntiAim": ["Normal", "Slide Walk", "Edge Jump"],
-      "Misc": [
-        "Bunnyhop",
-        "Autostrafe",
-        "Auto Pistol",
-        "No Flash",
-        "Rank Revealer"
-      ],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "modern_warfare"
+      "other_settings": { "video_url": "https://vimeo.com/916269887" },
+      "additional_information": [],
+      "order": 11,
+      "variants": [{ "id": 219518, "title": "Default" }]
     },
     {
-      "id": 9,
-      "title": "Product 9",
-      "image": "/common/product.svg",
-      "price": 50,
-      "information": [
-        "Windows PCs Only",
-        "Compatible with both Steam and Battlenet game launchers",
-        "Full Controller Support"
+      "id": 159742,
+      "title": "Spoofer | Exception",
+      "slug": "spoofer-exception",
+      "images": [
+        {
+          "path": "common/product.svg",
+          "metadata": {
+            "size": 710371,
+            "filename": "InGtUUZimOMik6U3y6s8TuRIjwOph9GxrpXqNdKa",
+            "extension": "gif",
+            "mime_type": "image/gif"
+          }
+        }
       ],
-      "Aimbot": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": [
-        "ESP",
-        "Chams",
-        "Radar",
-        "Grenade Trajectory",
-        "Spectator List",
-        "FOV Circle"
-      ],
-      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
-      "Misc": [
-        "Bunnyhop",
-        "Autostrafe",
-        "Auto Pistol",
-        "No Flash",
-        "Rank Revealer"
-      ],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "escape_from_tarkov"
-    },
-    {
-      "id": 10,
-      "title": "Product 10",
-      "image": "/common/product.svg",
-      "price": 55,
-      "information": [
-        "Windows PCs Only",
-        "All Windows Versions Supported",
-        "Compatible with both Steam and Battlenet game launchers",
-        "Full Controller Support"
-      ],
-      "Aimbot": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": [
-        "ESP",
-        "Chams",
-        "Radar",
-        "Crosshair",
-        "Grenade Trajectory",
-        "Spectator List",
-        "FOV Circle"
-      ],
-      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
-      "Misc": [
-        "Bunnyhop",
-        "Autostrafe",
-        "Auto Pistol",
-        "No Flash",
-        "Rank Revealer"
-      ],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "dazy"
-    },
-    {
-      "id": 11,
-      "title": "Product 11",
-      "image": "/common/product.svg",
-      "price": 60,
-      "information": [
-        "Windows PCs Only",
-        "All Windows Versions Supported",
-        "Compatible with both Steam and Origin game launchers",
-        "Full Controller Support"
-      ],
-      "Aimbot": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": [
-        "ESP",
-        "Chams",
-        "Radar",
-        "Crosshair",
-        "Grenade Trajectory",
-        "Spectator List",
-        "FOV Circle"
-      ],
-      "AntiAim": ["Normal", "Slide Walk", "Edge Jump"],
-      "Misc": [
-        "Bunnyhop",
-        "Autostrafe",
-        "Auto Pistol",
-        "No Flash",
-        "Rank Revealer"
-      ],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "modern_warfare"
-    },
-    {
-      "id": 12,
-      "title": "Product 12",
-      "image": "/common/product.svg",
-      "price": 65,
-      "information": [
-        "Windows PCs Only",
-        "All Windows Versions Supported",
-        "Compatible with both Steam and Battlenet game launchers",
-        "Full Controller Support"
-      ],
-      "Aimbot": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "Targeting": [
-        "Normal",
-        "Silent Aim (Client & Server)",
-        "Aim Bone",
-        "Customisable Aimbot Keybind",
-        "Aimbot Override Bone",
-        "Auto Fire",
-        "Auto Wall"
-      ],
-      "visuals": [
-        "ESP",
-        "Chams",
-        "Radar",
-        "Crosshair",
-        "Grenade Trajectory",
-        "Spectator List",
-        "FOV Circle"
-      ],
-      "AntiAim": ["Normal", "Fake Duck", "Slide Walk", "Edge Jump"],
-      "Misc": [
-        "Bunnyhop",
-        "Autostrafe",
-        "Auto Pistol",
-        "No Flash",
-        "Rank Revealer"
-      ],
-      "colors": ["Red", "Green", "Blue", "Yellow", "Purple", "Cyan", "White"],
-      "extras": [],
-      "forcesave": [],
-      "category": "escape_from_tarkov"
+      "other_settings": {
+        "video_url": "https://www.youtube.com/watch?v=i7Pp2n8x8hs"
+      },
+      "additional_information": [],
+      "order": 16,
+      "variants": [
+        { "id": 177384, "title": "1 Day" },
+        { "id": 178201, "title": "1 Week" },
+        { "id": 178203, "title": "1 Month" }
+      ]
     }
-  ]
+  ],
+  "links": {
+    "first": "https://sell.app/api/v2/products?page=1",
+    "last": "https://sell.app/api/v2/products?page=1",
+    "prev": null,
+    "next": null
+  },
+  "meta": {
+    "current_page": 1,
+    "from": 1,
+    "last_page": 1,
+    "per_page": 100,
+    "to": 13,
+    "total": 13
+  }
 }

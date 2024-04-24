@@ -1,9 +1,7 @@
 import Image from "next/image";
-
-import {useRouter} from "next/router"
-
+import { useRouter } from "next/router";
 import Link from "next/link";
-import BackArrow from "/public/icons/backArrow.svg"
+import BackArrow from "/public/icons/backArrow.svg";
 import MediaTab from "@/modules/Product/MediaTab";
 import FeaturesTab from "@/modules/Product/FeaturesTab";
 import { Button } from "@/components";
@@ -11,36 +9,45 @@ import Layout from "@/layouts/Layout";
 import productsData from "/src/pages/api/products.json";
 import React, { useEffect, useState } from "react";
 import Skeleton from "@/components/Skeleton/Skeleton";
+import ProductDuration from "@/modules/Product/ProductDuration";
 
 function Product() {
-    const [product, setProducts] = useState();
-  const router=useRouter()
-  const {id}=router.query;
+  const [product, setProduct] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
+  const [activeTab, setActiveTab] = useState("media");
+  const [count, setCount] = useState(1);
+const [selectedDuration, setSelectedDuration] = useState("");
+  const router = useRouter();
+  const { id } = router.query;
 
-  const [activeTab,setActiveTab]=useState("media")
-  const [count ,setCount]=useState(1)
-  const handleActiveTab=(tab)=>{
-    setActiveTab(tab)
-  }
-  const handleIncreaseCount=()=>{
-    setCount(prev=>++prev)
-  }
-   const handleDecreaseCount = () => {
-     if (count === 0) {
-       return;
-     }
-     setCount((prev) => --prev);
-   };
+  const handleSelectedDuratioin = (duration) => {
+    setSelectedDuration(duration);
+  };
+  const handleActiveTab = (tab) => {
+    setActiveTab(tab);
+  };
+  const handleIncreaseCount = () => {
+    setCount((prev) => ++prev);
+  };
+  const handleDecreaseCount = () => {
+    if (count === 0) {
+      return;
+    }
+    setCount((prev) => --prev);
+  };
 
-       useEffect(() => {
-        if(id){
-          const productjSON =productsData.products.find((item)=>item.id===parseInt(id))
-          setProducts(productjSON);
-        }
-         console.log(productsData.products);
-      
-       }, [id]);
-  
+  useEffect(() => {
+    if (id) {
+      const productId = parseInt(id);
+      const productData = productsData.products.find(
+        (item) => item.id === productId
+      );
+      console.log("Product Data:", productData);
+      setProduct(productData);
+      setIsLoading(false);
+    }
+  }, []);
+
   return (
     <Layout>
       <div
@@ -50,7 +57,7 @@ function Product() {
         <div className="flex flex-col pt-32  1440:w-[1216px]  mx-4 md:mx-auto ">
           <div className=" mx-auto lg:w-[95%] xl:w-[82%] flex flex-col-reverse items-center lg:flex-row  gap-4 justify-between mb-8   ">
             <div className=" text-2xl font-semibold text-white">
-              <p>title for image</p>
+              <p>{product.title}</p>
             </div>
             <Link
               className=" flex items-center font-semibold text-base text-secondaryGray gap-1 "
@@ -62,44 +69,35 @@ function Product() {
           </div>
           <div className="  w-fit mx-auto  flex flex-col lg:flex-row items-start   justify-center gap-24 ">
             <div className=" flex justify-cente items-start  ">
-              {
-                product ?(
-
-                  <Image src={product.image} width={475} height={268} alt="" />
-                ):(
-                  <Skeleton className={`w-[475px] h-[268px]`}/>
-                )
-              }
+              {isLoading ? (
+                <Skeleton className={`w-[475px] h-[268px]`} />
+              ) : (
+                <Image
+                  src={`/public/${product?.images[0]?.path}`}
+                  width={475}
+                  height={268}
+                  alt=""
+                />
+              )}
             </div>
             <div className="flex  flex-col  sm:mx-auto lg:mx-0   xs:w-full w-[429px] items-center justify-center  gap-2 ">
-              <div className="bg-secondaryBlack w-full rounded  border border-secondaryGray px-3 py-2 flex flex-col   ">
-                <div className="pb-5 text-sm text-secondaryGray flex justify-start ">
-                  <p>hi</p>
-                </div>
-                <div className="flex justify-between   items-center">
-                  <p className="text-white text-xl  ">$15 00</p>
-                  <p className="text-secondaryGray ">23 in stocks</p>
-                </div>
-              </div>
-              <div className="bg-secondaryBlack w-full rounded  border border-secondaryGray px-3 py-2 flex flex-col   ">
-                <div className="pb-5 text-sm text-secondaryGray flex justify-start ">
-                  <p>hi</p>
-                </div>
-                <div className="flex justify-between   items-center">
-                  <p className="text-white text-xl  ">$15 00</p>
-                  <p className="text-secondaryGray ">23 in stocks</p>
-                </div>
-              </div>
+              <ProductDuration
+                duration={"1 Day"}
+                price={5}
+                onClick={(duration) => handleSelectedDuratioin(duration)}
+              />
+              <ProductDuration
+                duration={"1 Week"}
+                price={15}
+                onClick={(duration) => handleSelectedDuratioin(duration)}
+              />
+              <ProductDuration
+                duration={"1 Month"}
+                price={25}
+                onClick={(duration) => handleSelectedDuratioin(duration)}
+                selectedDuration={selectedDuration}
+              />
 
-              <div className="bg-secondaryBlack w-full rounded  border border-secondaryGray px-3 py-2 flex flex-col   ">
-                <div className="pb-5 text-sm text-secondaryGray flex justify-start ">
-                  <p>hi</p>
-                </div>
-                <div className="flex justify-between   items-center">
-                  <p className="text-white text-xl  ">$15 00</p>
-                  <p className="text-secondaryGray ">23 in stocks</p>
-                </div>
-              </div>
               <div className="flex bg-secondaryBlack items-center w-full rounded  text-white   border border-secondaryGray ">
                 <span className="px-4" onClick={handleDecreaseCount}>
                   -
