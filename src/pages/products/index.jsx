@@ -34,7 +34,7 @@ function index() {
             <ProductDetails />
           </div>
           <div className="  mx-auto">
-            <Categories />
+            <Categories products={products} setProducts={setProducts} />
             <SearchInput onSearch={handleSearch} />
           </div>
           <div className=" mx-auto mt-8">
