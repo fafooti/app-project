@@ -12,16 +12,18 @@ import Skeleton from "@/components/Skeleton/Skeleton";
 import ProductDuration from "@/modules/Product/ProductDuration";
 
 function Product() {
+
   const [product, setProduct] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("media");
   const [count, setCount] = useState(1);
-const [selectedDuration, setSelectedDuration] = useState("");
+  const [selectedDuration, setSelectedDuration] = useState("");
+
   const router = useRouter();
   const { id } = router.query;
 
-  const handleSelectedDuratioin = (duration) => {
-    setSelectedDuration(duration);
+  const handleSelectedDuratioin = (id) => {
+    setSelectedDuration(id);
   };
   const handleActiveTab = (tab) => {
     setActiveTab(tab);
@@ -45,6 +47,7 @@ const [selectedDuration, setSelectedDuration] = useState("");
       console.log("Product Data:", productData);
       setProduct(productData);
       setIsLoading(false);
+      console.log("product",product.variants);
     }
   }, []);
 
@@ -81,22 +84,18 @@ const [selectedDuration, setSelectedDuration] = useState("");
               )}
             </div>
             <div className="flex  flex-col  sm:mx-auto lg:mx-0   xs:w-full w-[429px] items-center justify-center  gap-2 ">
-              <ProductDuration
-                duration={"1 Day"}
-                price={5}
-                onClick={(duration) => handleSelectedDuratioin(duration)}
-              />
-              <ProductDuration
-                duration={"1 Week"}
-                price={15}
-                onClick={(duration) => handleSelectedDuratioin(duration)}
-              />
-              <ProductDuration
-                duration={"1 Month"}
-                price={25}
-                onClick={(duration) => handleSelectedDuratioin(duration)}
-                selectedDuration={selectedDuration}
-              />
+              {product?.variants?.map((item) => (
+                <ProductDuration
+                  duration={item.title}
+                  price={25}
+                  stock={"23"}
+                  id={item.id}
+                  onClick={handleSelectedDuratioin}
+                  selectedDuration={
+                    selectedDuration === item.id ? item.id : null
+                  }
+                />
+              ))}
 
               <div className="flex bg-secondaryBlack items-center w-full rounded  text-white   border border-secondaryGray ">
                 <span className="px-4" onClick={handleDecreaseCount}>

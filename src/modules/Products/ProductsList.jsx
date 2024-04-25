@@ -18,7 +18,7 @@ function ProductsList({ setProducts,products, searchQuery }) {
     
        setProducts(productsdata.products);
      }
-   }, [searchQuery, products]);
+   }, [searchQuery]);
 
   
 

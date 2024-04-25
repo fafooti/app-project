@@ -18,11 +18,13 @@ function index() {
 
   const handleSearch = (query) => {
     setSearchQuery(query);
-    console.log(query);
+    console.log("search query",query);
   };
   useEffect(() => {
-   getAllProducts()
-  }, []);
+    
+ 
+  console.log("in index",products);
+  }, [products]);
   return (
     <Layout>
       <div className="flex flex-col  items-center justify-between mx-auto  min-h-screen overflow-hidden">
