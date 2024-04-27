@@ -5,8 +5,13 @@ import { Button } from "..";
 import Link from "next/link";
 import Skeleton from "../Skeleton/Skeleton";
 import useDebounce from "@/hooks/useDebounce";
-function ProductCard({ image,buttonText,items, title,id}) {
 
+
+
+function ProductCard({ image, buttonText, items, title, categoryId ,productId}) {
+     const productLink = categoryId
+       ? `/products?category=${categoryId}`
+       : `/products/${productId}`;
   return (
     <div className="flex flex-col w-fit justify-center h-full gap-4">
       <div className="relative ">
@@ -18,11 +23,10 @@ function ProductCard({ image,buttonText,items, title,id}) {
             height={158}
             src={`/${image}`}
           />
-        ) : ( 
-         <Skeleton className={"relative w-[280px] h-[158px]"} />
+        ) : (
+          <Skeleton className={"relative w-[280px] h-[158px]"} />
         )}
       </div>
-      {/* <Skeleton className={"relative w-[280px] h-[158px]"}/> */}
       <div className="flex justify-between">
         {title ? (
           <p className="text-white ">{title}</p>
@@ -33,10 +37,12 @@ function ProductCard({ image,buttonText,items, title,id}) {
         <p className="text-secondaryGray">{items && items + "items"}</p>
       </div>
       <Button className="text-center  bg-primaryBlack hover:bg-primaryPurple border text-white border-secondaryWhite ">
-        <Link href={`/products/${id}`}>{buttonText}</Link>
+        <Link href={productLink}>{buttonText}</Link>
       </Button>
     </div>
   );
-}
+};
+
+
 
 export default ProductCard;

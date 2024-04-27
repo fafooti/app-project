@@ -3,21 +3,25 @@ import productsdata from "/src/pages/api/products.json";
 
 import ProductCard from "@/components/ProductCard/ProductCard";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 function ProductsList({ setProducts,products, searchQuery }) {
-
+const router=useRouter()
+  const handleSerach=()=>{
+      if (searchQuery.trim() !== "") {
+        const searchedProducts = products.filter((item) =>
+          item.title.toLowerCase().includes(searchQuery.trim().toLowerCase())
+        );
+        console.log(searchedProducts);
+        setProducts(searchedProducts);
+      } else {
+        setProducts(productsdata.products);
+      }
+  }
    useEffect(() => {
-     if (searchQuery.trim() !== "") {
-       // Check if search query is non-empty after trimming
-       const searchedProducts = products.filter((item) =>
-         item.title.toLowerCase().includes(searchQuery.trim().toLowerCase())
-       );
-       console.log(searchedProducts);
-       setProducts(searchedProducts);
-     } else {
     
-       setProducts(productsdata.products);
-     }
+   handleSerach()
+
    }, [searchQuery]);
 
   

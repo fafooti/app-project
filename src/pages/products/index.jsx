@@ -22,7 +22,7 @@ function index() {
   };
   useEffect(() => {
     
- 
+//  getAllProducts();
   console.log("in index",products);
   }, [products]);
   return (

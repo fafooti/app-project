@@ -2,13 +2,38 @@ import React, { useEffect, useState } from 'react'
 import allCategories from "/src/pages/api/categoey.json";
 import style from "./hero.module.css"
 import ProductCard from '@/components/ProductCard/ProductCard';
-function PopularProducts() {
-  const [categories,setCategories]=useState([])
-useEffect(()=>{
-  setCategories(allCategories.data)
-},[])
+import { useRouter } from "next/router";
+import productsData from "/src/pages/api/products.json";
 
-  useEffect
+
+function PopularProducts() {
+  const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [products, setProducts] = useState([]);
+  const router = useRouter();
+
+  useEffect(() => {
+    setCategories(allCategories.data);
+  }, []);
+
+  const handleSelectedCategory = (categoryId) => {
+    setSelectedCategory(categoryId);
+    if (!categoryId) {
+      setProducts(productsData.products);
+          router.push("/products");
+      return;
+    }
+    const category = allCategories.data.find((cat) => cat.id === categoryId);
+    if (category) {
+      const productIds = category.products.map((product) => product.id);
+      const filteredProducts = productsData.products.filter((product) =>
+        productIds.includes(product.id)
+      );
+      setProducts(filteredProducts);
+       router.push(`/products?category=${categoryId}`);
+    }
+  };
+
   return (
     <div className=" flex flex-col  items-center text-center  ">
       <h2 className="text-white text-xl md:text-42 flex gap-4 justify-center max-w-full font-semibold  text-center pb-6">
@@ -31,6 +56,8 @@ useEffect(()=>{
             items={item.products_linked}
             image={item?.image?.path}
             title={item.title}
+            categoryId={item.id}
+            onClick={() => handleSelectedCategory(item.id)}
           />
         ))}
       </div>
