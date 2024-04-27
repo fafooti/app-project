@@ -18,8 +18,8 @@ function ProductCard({ image,buttonText,items, title,id}) {
             height={158}
             src={`/${image}`}
           />
-        ) : (
-          <Skeleton className={"relative w-[280px] h-[158px]"} />
+        ) : ( 
+         <Skeleton className={"relative w-[280px] h-[158px]"} />
         )}
       </div>
       {/* <Skeleton className={"relative w-[280px] h-[158px]"}/> */}

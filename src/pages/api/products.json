@@ -15,9 +15,11 @@
           }
         }
       ],
-      "other_settings": {
-        "video_url": "https://www.youtube.com/watch?v=CjUVbHmJDhI"
-      },
+      "other_settings": [
+        {
+          "badge": { "text": "DETECTED", "color": "#E4343F" }
+        }
+      ],
       "additional_information": [],
       "order": 1,
       "variants": [
@@ -42,9 +44,11 @@
           }
         }
       ],
-      "other_settings": {
-        "badge": { "text": "UNDETECTED", "color": "#00ff1e" }
-      },
+      "other_settings": [
+        {
+          "badge": { "text": "UNDETECTED", "color": "#00ff1e" }
+        }
+      ],
       "additional_information": [],
       "order": 5,
       "variants": [
@@ -69,7 +73,11 @@
           }
         }
       ],
-      "other_settings": [],
+      "other_settings": [
+        {
+          "badge": { "text": "UNDETECTED", "color": "#00ff1e" }
+        }
+      ],
       "additional_information": [],
       "order": 6,
       "variants": [
@@ -93,7 +101,11 @@
           }
         }
       ],
-      "other_settings": [],
+      "other_settings": [
+        {
+          "badge": { "text": "UNDETECTED", "color": "#00ff1e" }
+        }
+      ],
       "additional_information": [],
       "order": 7,
       "variants": [
@@ -118,7 +130,11 @@
           }
         }
       ],
-      "other_settings": { "video_url": "https://youtu.be/LLJBb7s75Xg" },
+      "other_settings": [
+        {
+          "badge": { "text": "UNDETECTED", "color": "#00ff1e" }
+        }
+      ],
       "additional_information": [],
       "order": 8,
       "variants": [
@@ -143,7 +159,11 @@
           }
         }
       ],
-      "other_settings": [],
+      "other_settings": [
+        {
+          "badge": { "text": "DETECTED", "color": "#E4343F" }
+        }
+      ],
       "additional_information": [],
       "order": 9,
       "variants": [
@@ -167,9 +187,11 @@
           }
         }
       ],
-      "other_settings": {
-        "video_url": "https://www.youtube.com/watch?v=qDCSJs3ACKM"
-      },
+      "other_settings": [
+        {
+          "badge": { "text": "Use at Own risk", "color": "#E47E34" }
+        }
+      ],
       "additional_information": [],
       "order": 10,
       "variants": [
@@ -193,7 +215,11 @@
           }
         }
       ],
-      "other_settings": { "video_url": "https://vimeo.com/916269887" },
+      "other_settings": [
+        {
+          "badge": { "text": "UNDETECTED", "color": "#00ff1e" }
+        }
+      ],
       "additional_information": [],
       "order": 11,
       "variants": [{ "id": 219518, "title": "Default" }]
@@ -213,9 +239,11 @@
           }
         }
       ],
-      "other_settings": {
-        "video_url": "https://www.youtube.com/watch?v=i7Pp2n8x8hs"
-      },
+      "other_settings": [
+        {
+          "badge": { "text": "UNDETECTED", "color": "#00ff1e" }
+        }
+      ],
       "additional_information": [],
       "order": 16,
       "variants": [

@@ -45,7 +45,7 @@ function Navbar() {
         <nav className="flex md:pl-4  md:justify-between justify-end  text-primaryGray">
           <div className="hidden md:flex  justify-center flex-grow">
             <div className="flex items-center gap-8 text-sm pl-8 ">
-              <Link href="/" className="flex items-center gap-2 ">
+              <Link href="/products" className="flex items-center gap-2 ">
                 <Image width={10} height={10} src={store} />
                 <span className="hover:border-b-2 border-primaryGray">
                   Store

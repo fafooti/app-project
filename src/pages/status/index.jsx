@@ -44,12 +44,29 @@ const statuses = [
 ];
 function index() {
   const [categories,setCategories]=useState([])
+  const [details, setDetails] = useState(["1"]);
 
-useEffect(()=>{
-  setCategories(categoryData.data)
-},[])
+  // const handleDetails = () => {
+  //   const category = categoryData.data.find((cat) => cat.id === categoryId);
+  //   if (category) {
+  //     const productIds = category.products.map((product) => product.id);
+  //     console.log("products ids", productIds);
+  //     const filteredProducts = allData.products.filter((product) =>
+  //       productIds.includes(product.id.toString())
+  //     );
+  //     setDetails(filteredProducts);
+  //     console.log("filter", filteredProducts);
+  //   }
+  //   useEffect(() => {
+  //     setCategories(categoryData.data);
+  //     handleDetails();
+  //   }, []);
+  // };
 
-
+  useEffect(()=>{
+    setCategories(categoryData.data)
+    console.log("indesx",categories);
+  },[categories])
   return (
     <Layout>
       <div
@@ -62,9 +79,7 @@ useEffect(()=>{
             STATUS
           </p>
           <p className="text-secondaryPurple  md:w-[713px] mb-8 font-moderat text-lg  ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
+          stay up to date with the status of all tools
           </p>
         </div>
         <div className="flex flex-col gap-5 pt-4">

@@ -5,7 +5,7 @@
       "title": "Call of Duty",
       "order": 1,
       "image": {
-        "path": "store/29295/groups/l4ByUuC9TzU6RmGPK7zjpSIDsxzNCbE2vIQLpPyR.gif",
+        "path": "common/product.svg",
         "metadata": {
           "size": 875912,
           "filename": "l4ByUuC9TzU6RmGPK7zjpSIDsxzNCbE2vIQLpPyR",
@@ -26,7 +26,7 @@
       "title": "Rust",
       "order": 2,
       "image": {
-        "path": "store/29295/groups/YGLv9HMxwc1A6GMoLMENwcT0VhAJbhTU7G714Uju.gif",
+        "path": "common/product.svg",
         "metadata": {
           "size": 890167,
           "filename": "YGLv9HMxwc1A6GMoLMENwcT0VhAJbhTU7G714Uju",
@@ -42,7 +42,7 @@
       "title": "Apex Legends",
       "order": 3,
       "image": {
-        "path": "store/29295/groups/435PJzdzQ2qMigUMHqJKoRH3yRx99b6O4Czobf7I.gif",
+        "path": "common/product.svg",
         "metadata": {
           "size": 764564,
           "filename": "435PJzdzQ2qMigUMHqJKoRH3yRx99b6O4Czobf7I",
@@ -58,7 +58,7 @@
       "title": "Rainbow Six Siege",
       "order": 4,
       "image": {
-        "path": "store/29295/groups/Xkefvhxf0jkViX21yO4u2GEgYGDHMTFWPCxdYYHn.gif",
+        "path": "common/product.svg",
         "metadata": {
           "size": 632756,
           "filename": "Xkefvhxf0jkViX21yO4u2GEgYGDHMTFWPCxdYYHn",
@@ -74,7 +74,7 @@
       "title": "Escape From Tarkov",
       "order": 5,
       "image": {
-        "path": "store/29295/groups/G2HhWO5fgk8JTu7ZMmARIyQfs3Fo5bl8y7I3qsBp.gif",
+        "path": "common/product.svg",
         "metadata": {
           "size": 918593,
           "filename": "G2HhWO5fgk8JTu7ZMmARIyQfs3Fo5bl8y7I3qsBp",
@@ -90,7 +90,7 @@
       "title": "DayZ",
       "order": 7,
       "image": {
-        "path": "store/29295/groups/wyRtIJNbIlZHP3GgaumRbfHpsim7rSordZLuh0lf.gif",
+        "path": "common/product.svg",
         "metadata": {
           "size": 1050404,
           "filename": "wyRtIJNbIlZHP3GgaumRbfHpsim7rSordZLuh0lf",
@@ -106,7 +106,7 @@
       "title": "Spoofers",
       "order": 8,
       "image": {
-        "path": "store/29295/groups/v2i7merGamAK03zrUbA3MYX35ZPCaGpNuESiNkqq.jpg",
+        "path": "common/product.svg",
         "metadata": {
           "size": 20893,
           "filename": "v2i7merGamAK03zrUbA3MYX35ZPCaGpNuESiNkqq",
