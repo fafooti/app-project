@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import productsData from "/src/pages/api/products.json";
+import categoryData from "/src/pages/api/categoey.json";
+function Status({title,categoryId}) {
+  const [details,setDetails]=useState([])
+   const handleDetails=()=>{
+    const category = categoryData.data.find((cat) => cat.id === categoryId);
+if (category) {
+  const productIds = category.products.map((product) => product.id);
+  console.log("products ids", productIds);
+  const filteredProducts = allData.products.filter((product) =>
+    productIds.includes(product.id.toString())
+  );
+  setDetails(filteredProducts)
+  console.log("filter", filteredProducts);
 
-function Status({title,details}) {
-    const getStatusColor = (status) => {
-      switch (status) {
-        case "undetected":
-          return "text-primaryGreen";
-        case "detected":
-          return "text-[#E4343F]";
-        case "use-at-own-risk":
-          return "text-[#E47E34]";
-          case "updating":
-            return "text-primaryPurple";
-        default:
-          break;
-      }
-    };
+}
+
+useEffect(()=>{
+  handleDetails()
+  console.log("hi");
+},[details])
+   }
   return (
     <>
       <div className="flex flex-col justify-center items-center gap-4">

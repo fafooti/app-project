@@ -1,6 +1,8 @@
 import Layout from "@/layouts/Layout";
 import Status from "@/modules/Status/Status";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import productsData from "/src/pages/api/products.json";
+import categoryData from "/src/pages/api/categoey.json"
 const statuses = [
   {
     id:1,
@@ -41,6 +43,13 @@ const statuses = [
   },
 ];
 function index() {
+  const [categories,setCategories]=useState([])
+
+useEffect(()=>{
+  setCategories(categoryData.data)
+},[])
+
+
   return (
     <Layout>
       <div
@@ -59,9 +68,9 @@ function index() {
           </p>
         </div>
         <div className="flex flex-col gap-5 pt-4">
-          {statuses.map((item) => (
+          {categories.map((item) => (
             <div key={item.id} className="">
-              <Status title={item.title} details={item.details} />
+              <Status title={item.title} categoryId={item.id} />
             </div>
           ))}
         </div>

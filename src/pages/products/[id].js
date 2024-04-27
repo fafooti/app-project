@@ -76,7 +76,7 @@ function Product() {
                 <Skeleton className={`w-[475px] h-[268px]`} />
               ) : (
                 <Image
-                  src={`/public/${product?.images[0]?.path}`}
+                  src={`/${product?.images[0]?.path}`}
                   width={475}
                   height={268}
                   alt=""
