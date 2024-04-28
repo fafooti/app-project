@@ -46,20 +46,20 @@ function Navbar() {
           <div className="hidden md:flex  justify-center flex-grow">
             <div className="flex items-center gap-8 text-sm pl-8 ">
               <Link href="/products" className="flex items-center gap-2 ">
-                <Image width={10} height={10} src={store} />
+                <Image alt="store" width={10} height={10} src={store} />
                 <span className="hover:border-b-2 border-primaryGray">
                   Store
                 </span>
               </Link>
               <Link href="/status" className="flex items-center gap-2 ">
-                <Image width={10} height={10} src={status} />
+                <Image alt="status" width={10} height={10} src={status} />
                 <span className="hover:border-b-2 border-primaryGray">
                   {" "}
                   Status
                 </span>
               </Link>
               <Link href="/faq" className="flex items-center gap-2">
-                <Image width={10} height={10} src={faq} />
+                <Image alt="faq" width={10} height={10} src={faq} />
                 <span className="hover:border-b-2 border-primaryGray">
                   {" "}
                   FAQ
@@ -76,9 +76,9 @@ function Navbar() {
               onClick={handleNavbar}
             >
               {isOpen ? (
-                <Image width={20} height={20} src={close} />
+                <Image alt="close" width={20} height={20} src={close} />
               ) : (
-                <Image width={40} height={30} src={menu.src} />
+                <Image alt="menu" width={40} height={30} src={menu.src} />
               )}
             </button>
           </div>

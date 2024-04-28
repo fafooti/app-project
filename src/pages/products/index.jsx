@@ -6,24 +6,21 @@ import SearchInput from "@/modules/Products/SearchInput";
 import React, { useEffect, useState } from "react";
 import productsData from "/src/pages/api/products.json";
 
-function index() {
+function Products() {
   const [products, setProducts] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
   const getAllProducts = () => {
     console.log(productsData.products);
-  setProducts(productsData.products)
-  
+    setProducts(productsData.products);
   };
 
   const handleSearch = (query) => {
     setSearchQuery(query);
-    console.log("search query",query);
+
   };
   useEffect(() => {
-    
-//  getAllProducts();
-  console.log("in index",products);
+    console.log("in index", products);
   }, [products]);
   return (
     <Layout>
@@ -52,4 +49,4 @@ function index() {
   );
 }
 
-export default index;
+export default Products;

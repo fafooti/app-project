@@ -50,8 +50,9 @@ function PopularProducts() {
         of high-quality products!
       </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 pt-16 ">
-        {categories.map((item) => (
+        {categories.map((item,index) => (
           <ProductCard
+          key={index}
             buttonText={"view all"}
             items={item.products_linked}
             image={item?.image?.path}

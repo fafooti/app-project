@@ -66,7 +66,7 @@ function Product() {
               className=" flex items-center font-semibold text-base text-secondaryGray gap-1 "
               href="/products"
             >
-              <Image src={BackArrow} width={10.37} height={10.37} />
+              <Image alt="products image" src={BackArrow} width={10.37} height={10.37} />
               Go back to store
             </Link>
           </div>
@@ -79,7 +79,7 @@ function Product() {
                   src={`/${product?.images[0]?.path}`}
                   width={475}
                   height={268}
-                  alt=""
+                  alt="product"
                 />
               )}
             </div>
