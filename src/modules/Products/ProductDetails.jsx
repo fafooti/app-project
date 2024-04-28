@@ -10,6 +10,8 @@ function ProductDetails() {
           <Image
           alt='glow'
             src={glowImage}
+            width={100}
+            height={100}
             className="absolute top-1 md:-top-12 w-full "
           />
 

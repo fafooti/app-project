@@ -8,7 +8,7 @@ function NavbarButton() {
         Discorde
       </button>
       <button className=" flex rounded  w-full md:w-fit items-center justify-center gap-2 px-3 py-2 bg-primaryPurple text-xs  ">
-        <Image src={cheat} alt="icon" />
+        <Image width={10} height={10} src={cheat} alt="icon" />
         Our Cheats
       </button>
     </div>

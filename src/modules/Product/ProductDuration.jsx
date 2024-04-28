@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 
 function ProductDuration({
   duration,
@@ -31,4 +31,4 @@ function ProductDuration({
   );
 }
 
-export default ProductDuration
+export default ProductDuration;
