@@ -12,7 +12,6 @@ import Skeleton from "@/components/Skeleton/Skeleton";
 import ProductDuration from "@/modules/Product/ProductDuration";
 
 function Product() {
-
   const [product, setProduct] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("media");
@@ -47,7 +46,7 @@ function Product() {
       console.log("Product Data:", productData);
       setProduct(productData);
       setIsLoading(false);
-      console.log("product",product.variants);
+      console.log("product", product.variants);
     }
   }, []);
 
@@ -66,7 +65,12 @@ function Product() {
               className=" flex items-center font-semibold text-base text-secondaryGray gap-1 "
               href="/products"
             >
-              <Image alt="products image" src={BackArrow} width={10.37} height={10.37} />
+              <Image
+                alt="products image"
+                src={BackArrow}
+                width={10.37}
+                height={10.37}
+              />
               Go back to store
             </Link>
           </div>
@@ -84,8 +88,9 @@ function Product() {
               )}
             </div>
             <div className="flex  flex-col  sm:mx-auto lg:mx-0   xs:w-full w-[429px] items-center justify-center  gap-2 ">
-              {product?.variants?.map((item) => (
+              {product?.variants?.map((item, index) => (
                 <ProductDuration
+                  key={index}
                   duration={item.title}
                   price={25}
                   stock={"23"}

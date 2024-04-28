@@ -3,39 +3,37 @@ import Layout from "@/layouts/Layout";
 import React, { useState } from "react";
 const faqData = [
   {
-    id:0,
+    id: 0,
     question: "Which payment methods do you accept?",
     answer:
       "We accept PayPal, Bitcoin, Ethereum, Litecoin and 12+ other crypto currencies.",
   },
   {
-    id:1,
+    id: 1,
     question: "Which payment methods do you accept?",
     answer:
       "We accept PayPal, Bitcoin, Ethereum, Litecoin and 12+ other crypto currencies.",
   },
   {
-    id:2,
+    id: 2,
     question: "Which payment methods do you accept?",
     answer:
       "We accept PayPal, Bitcoin, Ethereum, Litecoin and 12+ other crypto currencies.",
   },
   {
-    id:3,
+    id: 3,
     question: "Which payment methods do you accept?",
     answer:
       "We accept PayPal, Bitcoin, Ethereum, Litecoin and 12+ other crypto currencies.",
   },
   {
-    id:4,
+    id: 4,
     question: "Which payment methods do you accept?",
     answer:
       "We accept PayPal, Bitcoin, Ethereum, Litecoin and 12+ other crypto currencies.",
   },
 ];
 function index() {
-
-
   return (
     <Layout>
       <div
@@ -54,12 +52,7 @@ function index() {
         </div>
         <div className="flex flex-col gap-4 ">
           {faqData.map((item) => (
-            <Faq
-              key={item.id}
-              question={item.question}
-              answer={item.answer}
-          
-            />
+            <Faq key={item.id} question={item.question} answer={item.answer} />
           ))}
         </div>
       </div>

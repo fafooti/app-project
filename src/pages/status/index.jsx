@@ -79,12 +79,12 @@ function index() {
             STATUS
           </p>
           <p className="text-secondaryPurple  md:w-[713px] mb-8 font-moderat text-lg  ">
-          stay up to date with the status of all tools
+            stay up to date with the status of all tools
           </p>
         </div>
         <div className="flex flex-col gap-5 pt-4">
-          {categories.map((item) => (
-            <div key={item.id} className="">
+          {categories.map((item, index) => (
+            <div key={index} className="">
               <Status title={item.title} categoryId={item.id} />
             </div>
           ))}

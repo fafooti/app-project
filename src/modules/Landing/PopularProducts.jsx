@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import allCategories from "/src/pages/api/categoey.json";
-import style from "./hero.module.css"
-import ProductCard from '@/components/ProductCard/ProductCard';
+import style from "./hero.module.css";
+import ProductCard from "@/components/ProductCard/ProductCard";
 import { useRouter } from "next/router";
 import productsData from "/src/pages/api/products.json";
-
 
 function PopularProducts() {
   const [categories, setCategories] = useState([]);
@@ -20,7 +19,7 @@ function PopularProducts() {
     setSelectedCategory(categoryId);
     if (!categoryId) {
       setProducts(productsData.products);
-          router.push("/products");
+      router.push("/products");
       return;
     }
     const category = allCategories.data.find((cat) => cat.id === categoryId);
@@ -30,7 +29,7 @@ function PopularProducts() {
         productIds.includes(product.id)
       );
       setProducts(filteredProducts);
-       router.push(`/products?category=${categoryId}`);
+      router.push(`/products?category=${categoryId}`);
     }
   };
 
@@ -50,9 +49,9 @@ function PopularProducts() {
         of high-quality products!
       </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 pt-16 ">
-        {categories.map((item,index) => (
+        {categories.map((item, index) => (
           <ProductCard
-          key={index}
+            key={index}
             buttonText={"view all"}
             items={item.products_linked}
             image={item?.image?.path}
@@ -66,4 +65,4 @@ function PopularProducts() {
   );
 }
 
-export default PopularProducts
+export default PopularProducts;
