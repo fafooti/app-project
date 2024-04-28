@@ -8,6 +8,7 @@ function ProductDetails() {
       <div className="flex flex-col mx-auto items-center text-center justify-start pt-20 md:w-4/5">
         <div className="md:w-[504px]  py-6 md:h-[91px] relative">
           <Image
+          alt='glow'
             src={glowImage}
             className="absolute top-1 md:-top-12 w-full "
           />

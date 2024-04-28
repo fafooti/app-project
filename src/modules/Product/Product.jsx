@@ -7,7 +7,7 @@ function Product() {
   return (
     <>
       <div className=" flex justify-center  ">
-        <Image src={product} width={475} height={268} alt="" />
+        <Image src={product} width={475} height={268} alt="product" />
       </div>
       <div className="flex  flex-col  sm:mx-auto lg:mx-0  bg-red-300 xs:w-full w-[429px] items-center justify-center  gap-2 ">
         <div className="bg-secondaryBlack w-full rounded rounded-5 border border-secondaryGray px-3 py-2 flex flex-col   ">

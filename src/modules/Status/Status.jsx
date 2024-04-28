@@ -5,23 +5,6 @@ import allData from "/src/pages/api/products.json";
 function Status({ title, categoryId }) {
   const [details, setDetails] = useState([]);
 
-  // const handleDetails = () => {
-//     const category = categoryData.data.find((cat) => cat.id === categoryId);
-//     if (category) {
-//       const productIds = category.products.map((product) => product.id);
-//       console.log("products ids", productIds);
-//       const filteredProducts = allData.products.filter((product) =>
-//         productIds.includes(product.id.toString())
-//       );
-//       setDetails(filteredProducts);
-//       console.log("filter", filteredProducts);
-//     }
-// 
-//     useEffect(() => {
-//       handleDetails();
-//       console.log("hi");
-//     }, [details]);
-//   };
 const handleDetails=()=>{
   console.log("handleDetalis", categoryId);
   const category=categoryData.data.find((item)=>item.id===categoryId)

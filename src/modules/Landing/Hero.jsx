@@ -3,6 +3,7 @@ import { Button } from "/src/components";
 import cheat from "/public/icons/cheat.svg";
 import Typewriter from "typewriter-effect";
 import Link from "next/link";
+import Image from "next/image";
 function Hero() {
   return (
     <div>
@@ -37,7 +38,7 @@ function Hero() {
           </p>
           <div className="flex gap-2 justify-center  ">
             <Button className="text-white uppercase   bg-primaryPurple">
-              <img src={cheat.src} />
+              <Image alt="cheat icon" width={14} height={14} src={cheat.src} />
              <Link href="/products"> our Cheats</Link>
             </Button>
             <Button className="py-2.5 px-3.5 text-sm bg-primaryBlack uppercase border-2 border-secondaryWhite text-white ">
