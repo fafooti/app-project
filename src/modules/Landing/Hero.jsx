@@ -33,7 +33,7 @@ function Hero() {
             </span>
           </h1>
           <p className="text-secondaryPurple   md:max-w-[713px] mb-8 font-moderat text-lg  ">
-            Your #1 Trusted Cheat Provider, offering high-quality, reliable
+            Your 1 Trusted Cheat Provider, offering high-quality, reliable
             products for amazing prices with top notch customer support.
           </p>
           <div className="flex gap-2 justify-center  ">

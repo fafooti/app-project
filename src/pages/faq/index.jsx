@@ -1,6 +1,6 @@
 import Faq from "@/modules/FAQ/Faq";
 import Layout from "@/layouts/Layout";
-import React, { useState } from "react";
+
 const faqData = [
   {
     id: 0,
@@ -33,7 +33,7 @@ const faqData = [
       "We accept PayPal, Bitcoin, Ethereum, Litecoin and 12+ other crypto currencies.",
   },
 ];
-function index() {
+function Index() {
   return (
     <Layout>
       <div
@@ -60,4 +60,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

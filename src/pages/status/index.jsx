@@ -42,7 +42,7 @@ const statuses = [
     ],
   },
 ];
-function index() {
+function Index() {
   const [categories,setCategories]=useState([])
   const [details, setDetails] = useState(["1"]);
 
@@ -78,4 +78,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
