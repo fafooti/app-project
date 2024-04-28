@@ -48,7 +48,7 @@ function Product() {
       setIsLoading(false);
       console.log("product", product.variants);
     }
-  }, []);
+  }, [id]);
 
   return (
     <Layout>

@@ -4,6 +4,7 @@ import style from "./hero.module.css";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import { useRouter } from "next/router";
 import productsData from "/src/pages/api/products.json";
+import Link from "next/link";
 
 function PopularProducts() {
   const [categories, setCategories] = useState([]);
@@ -50,15 +51,16 @@ function PopularProducts() {
       </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 pt-16 ">
         {categories.map((item, index) => (
-          <ProductCard
-            key={index}
-            buttonText={"view all"}
-            items={item.products_linked}
-            image={item?.image?.path}
-            title={item.title}
-            categoryId={item.id}
-            onClick={() => handleSelectedCategory(item.id)}
-          />
+          <Link key={index} href={`/products?category=${item.id}`}>
+            <ProductCard
+              buttonText={"view all"}
+              items={item.products_linked}
+              image={item?.image?.path}
+              title={item.title}
+              categoryId={item.id}
+              //onClick={() => handleSelectedCategory(item.id)}
+            />
+          </Link>
         ))}
       </div>
     </div>

@@ -7,32 +7,33 @@ import { useRouter } from "next/router";
 
 function Categories({ products, setProducts }) {
   const [categories, setCategories] = useState([]);
-  const [selectedCategory,setSelectedCategory] = useState(null);
-const router=useRouter()
+  const router = useRouter();
+  const { category } = router.query;
 
-useEffect(() => {
-  setCategories(categoryData.data);
-  router.push("/products");
-
-}, []);
-
-const handleSelectedCategory = (categoryId) => {
-  setSelectedCategory(categoryId);
-  if (!categoryId) {
-    router.push("/products");
-    setProducts(allData.products);
-    return;
-  }
-  const category = categoryData.data.find((cat) => cat.id === categoryId);
-  if (category) {
-    const productIds = category.products.map((product) => product.id);
-    const filteredProducts = allData.products.filter((product) =>
-      productIds.includes(product.id.toString())
-    );
-    setProducts(filteredProducts);
+  const handleSelectedCategory = (categoryId) => {
     router.push(`/products?category=${categoryId}`);
-  }
-};
+    // if (!categoryId) {
+    //   router.push("/products");
+    //   setProducts(allData.products);
+    //   return;
+    // }
+    const category = categoryData.data.find(
+      (cat) => String(cat.id) === categoryId
+    );
+    if (category) {
+      const productIds = category.products.map((product) => product.id);
+      const filteredProducts = allData.products.filter((product) =>
+        productIds.includes(product.id.toString())
+      );
+      //setProducts(filteredProducts);
+    }
+  };
+
+  useEffect(() => {
+    setCategories(categoryData.data);
+    if (category) handleSelectedCategory(category);
+  }, [category]);
+
   return (
     <div className=" flex items-center flex-wrap justify-center gap-2.5  px-8">
       {categories?.map((category, index) => (

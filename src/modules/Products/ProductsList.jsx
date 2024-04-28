@@ -4,27 +4,27 @@ import productsdata from "/src/pages/api/products.json";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useParams } from "next/navigation";
 
-function ProductsList({ setProducts,products, searchQuery }) {
-const router=useRouter()
-  const handleSerach=()=>{
-      if (searchQuery.trim() !== "") {
-        const searchedProducts = products.filter((item) =>
-          item.title.toLowerCase().includes(searchQuery.trim().toLowerCase())
-        );
-        console.log(searchedProducts);
-        setProducts(searchedProducts);
-      } else {
-        setProducts(productsdata.products);
-      }
-  }
-   useEffect(() => {
-    
-   handleSerach()
+function ProductsList({ setProducts, products, searchQuery }) {
+  const router = useRouter();
 
-   }, [searchQuery]);
-
+    const handleSerach=()=>{
+        if (searchQuery.trim() !== "") {
+          const searchedProducts = products.filter((item) =>
+            item.title.toLowerCase().includes(searchQuery.trim().toLowerCase())
+          );
+          console.log(searchedProducts);
+          setProducts(searchedProducts);
+        } else {
+          setProducts(productsdata.products);
+        }
+    }
+     useEffect(() => {
   
+     handleSerach()
+  
+     }, [searchQuery]);
 
   return (
     <div className=" flex flex-col w-full items-center ">

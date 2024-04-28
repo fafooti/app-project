@@ -3,12 +3,34 @@ import Categories from "@/modules/Products/Categories";
 import ProductDetails from "@/modules/Products/ProductDetails";
 import ProductsList from "@/modules/Products/ProductsList";
 import SearchInput from "@/modules/Products/SearchInput";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import productsData from "/src/pages/api/products.json";
+import categoryData from "/src/pages/api/categoey.json";
+import { useRouter } from "next/router";
 
 function Products() {
+  const router = useRouter();
   const [products, setProducts] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const { category } = router.query;
+
+  const filterData = useMemo(() => {
+    if (category) {
+      const newCategori = categoryData.data.find(
+        (it) => String(it.id) === category
+      );
+      if (newCategori) {
+        const productIds = newCategori.products.map((product) => product.id);
+        const filteredProducts = productsData.products.filter((product) =>
+          productIds.includes(product.id.toString())
+        );
+        return [...filteredProducts];
+      }
+    }
+    return [...products];
+  }, [category, products]);
+
+  console.log(products, filterData, category);
 
   const getAllProducts = () => {
     console.log(productsData.products);
@@ -17,11 +39,8 @@ function Products() {
 
   const handleSearch = (query) => {
     setSearchQuery(query);
-
   };
-  useEffect(() => {
-    console.log("in index", products);
-  }, [products]);
+
   return (
     <Layout>
       <div className="flex flex-col  items-center justify-between mx-auto  min-h-screen overflow-hidden">
@@ -39,7 +58,7 @@ function Products() {
           <div className=" mx-auto mt-8">
             <ProductsList
               setProducts={setProducts}
-              products={products}
+              products={filterData}
               searchQuery={searchQuery}
             />
           </div>
