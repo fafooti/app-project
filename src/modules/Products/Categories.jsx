@@ -7,30 +7,17 @@ import { useRouter } from "next/router";
 
 function Categories({ products, setProducts }) {
   const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(null);
   const router = useRouter();
   const { category } = router.query;
 
   const handleSelectedCategory = (categoryId) => {
     router.push(`/products?category=${categoryId}`);
-    // if (!categoryId) {
-    //   router.push("/products");
-    //   setProducts(allData.products);
-    //   return;
-    // }
-    const category = categoryData.data.find(
-      (cat) => String(cat.id) === categoryId
-    );
-    if (category) {
-      const productIds = category.products.map((product) => product.id);
-      const filteredProducts = allData.products.filter((product) =>
-        productIds.includes(product.id.toString())
-      );
-      //setProducts(filteredProducts);
-    }
   };
 
   useEffect(() => {
     setCategories(categoryData.data);
+    setSelectedCategory(Number(router.query.category));
     if (category) handleSelectedCategory(category);
   }, [category]);
 
@@ -40,7 +27,11 @@ function Categories({ products, setProducts }) {
         <Button
           onClick={() => handleSelectedCategory(category.id)}
           key={index}
-          className="border border-secondaryWhite bg-secondaryBlack text-white text-xs font-semibold "
+          className={`  bg-secondaryBlack text-white text-xs font-semibold  ${
+            selectedCategory === category.id
+              ? "border border-primaryPurple"
+              : " border border-secondaryWhite"
+          }`}
         >
           <img src={icon.src} />
           {category.title}
