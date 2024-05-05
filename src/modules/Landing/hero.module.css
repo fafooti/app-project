@@ -19,52 +19,49 @@
 
     }
 }
-
 .glow::before {
     content: "";
-    background: url("/icons/ellipse.svg");
+    background: url("/img/others/purple-glow.svg");
     background-position: center;
     background-size: cover;
     overflow: visible;
-    width: 200px;
-    height: 50px;
     position: absolute;
-    left: -0%;
+    left: -10%;
     top: 70%;
-    z-index: -1;
     transform: translate(-50%, -50%);
-
-
+    z-index: -1;
 }
 
 .glow::after {
     content: "";
-    background: url("/icons/ellipse.svg");
+    background: url("/img/others/purple-glow.svg");
     background-position: center;
     background-size: cover;
     overflow: visible;
-    width: 200px;
-    height: 50px;
+    width: 404px;
+    height: 91px;
     position: absolute;
-    left: 90%;
-    top: 20%;
+    left: 70%;
+    top: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width:767px) {
-    .glow::after {
-        width: 404px;
-            height: 91px;
-    }
-    .glow::after{
-        left: 70%;
-        top: 50%;
-    }
-    .glow::before{
-        left: -10%;
-            top: 70%;
+@media screen and (max-width: 767px) {
+
+    .glow::after,
+    .glow::before {
+        width: 200px;
+        height: 50px;
     }
 
+    .glow::after {
+        left: 90%;
+        top: 20%;
+    }
+
+    .glow::before {
+        left: 0%;
+        top: 70%;
+    }
 }

@@ -1,13 +1,12 @@
 import React from "react";
 import Slide from "./Slide";
-import style from "./hero.module.css";
 import Marquee from "react-fast-marquee";
 import shadow from "/public/common/shadow.svg";
 const data = [
   {
     id: 1,
     name: "Product A",
-    rate:1.5,
+    rate: 1.5,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae leo vel lectus malesuada tincidunt nec vel justo.",
   },
   {
@@ -58,15 +57,36 @@ const data = [
     rate: 3.5,
     desc: "Maecenas lobortis quam nec nulla varius, ac pretium sem luctus. Nullam bibendum enim quis risus iaculis rhoncus.",
   },
+  {
+    id: 10,
+    name: "Product J",
+    rate: 3.5,
+    desc: "Maecenas lobortis quam nec nulla varius, ac pretium sem luctus. Nullam bibendum enim quis risus iaculis rhoncus.",
+  },
+  {
+    id:11,
+    name: "Product K",
+    rate: 3.5,
+    desc: "Maecenas lobortis quam nec nulla varius, ac pretium sem luctus. Nullam bibendum enim quis risus iaculis rhoncus.",
+  },
+  {
+    id: 12,
+    name: "Product L",
+    rate: 3.5,
+    desc: "Maecenas lobortis quam nec nulla varius, ac pretium sem luctus. Nullam bibendum enim quis risus iaculis rhoncus.",
+  },
 ];
 function Slider() {
   return (
-    <div className="pt-32 pb-32 flex flex-col gap-16">
+    <div className="pt-20 flex flex-col gap-16">
       <div className="flex flex-col w-full justify-center items-center">
-        <div className="text-center lg:w-[855px]   inline">
+        <div className="text-xl md:text-42 inline-block lg:w-[855px] text-center">
           <p className="text-white md:text-42 lg:text-5xl font-semibold text-xl ">
-            WHAT <span className="text-primaryPurple ">OUR CUSTOMERS</span> HAVE
-            TO SAY ABOUT OUR PRODUCTS
+            WHAT{" "}
+            <span className="text-primaryPurple  z-10 relative whitespace-nowrap ">
+              OUR CUSTOMERS
+            </span>{" "}
+            HAVE TO SAY ABOUT OUR PRODUCTS
           </p>
           <p className="md:text-base text-sm font-medium text-secondaryPurple pt-7">
             Still don’t believe in our products? See what our customer have to

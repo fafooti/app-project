@@ -35,11 +35,11 @@ function PopularProducts() {
   };
 
   return (
-    <div className=" flex flex-col  items-center text-center  ">
+    <div className=" flex flex-col  items-center text-center -mt-[100px]  ">
       <h2 className="text-white text-xl md:text-42 flex gap-4 justify-center max-w-full font-semibold  text-center pb-6">
         <p className="whitespace-nowrap">OUR MOST</p>
         <div className="text-primaryPurple text-center z-10 relative">
-          <p className={`${style.glow}`}>POPULAR</p>
+          <p className={style.glow}>POPULAR</p>
         </div>
         <p>PRODUCTS</p>
       </h2>
@@ -58,7 +58,6 @@ function PopularProducts() {
               image={item?.image?.path}
               title={item.title}
               categoryId={item.id}
-              //onClick={() => handleSelectedCategory(item.id)}
             />
           </Link>
         ))}
