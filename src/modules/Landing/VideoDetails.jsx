@@ -4,6 +4,7 @@ function VideoDetails({ id, title, desc, isActive, onItemClick }) {
      const handleClick = () => {
        onItemClick(id);
      };
+     
   return (
     <div
       className={` flex flex-col  pl-5  ${
