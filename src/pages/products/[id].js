@@ -11,16 +11,16 @@ import React, { useEffect, useState } from "react";
 import Skeleton from "@/components/Skeleton/Skeleton";
 import ProductDuration from "@/modules/Product/ProductDuration";
 
+
 function Product() {
   const [product, setProduct] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState("media");
   const [count, setCount] = useState(1);
   const [selectedDuration, setSelectedDuration] = useState("");
-
   const router = useRouter();
   const { id } = router.query;
-
+console.log(router.query);
   const handleSelectedDuratioin = (id) => {
     setSelectedDuration(id);
   };
@@ -38,6 +38,7 @@ function Product() {
   };
 
   useEffect(() => {
+  
     if (id) {
       const productId = parseInt(id);
       const productData = productsData.products.find(
@@ -46,7 +47,7 @@ function Product() {
       console.log("Product Data:", productData);
       setProduct(productData);
       setIsLoading(false);
-      console.log("product", product.variants);
+      console.log("product", product?.variants);
     }
   }, [id]);
 
@@ -59,7 +60,7 @@ function Product() {
         <div className="flex flex-col pt-32  1440:w-[1216px]  mx-4 md:mx-auto ">
           <div className=" mx-auto lg:w-[95%] xl:w-[82%] flex flex-col-reverse items-center lg:flex-row  gap-4 justify-between mb-8   ">
             <div className=" text-2xl font-semibold text-white">
-              <p>{product.title}</p>
+              <p>{product?.title}</p>
             </div>
             <Link
               className=" flex items-center font-semibold text-base text-secondaryGray gap-1 "

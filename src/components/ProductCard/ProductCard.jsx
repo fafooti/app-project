@@ -12,6 +12,9 @@ function ProductCard({ image, buttonText, items, title, categoryId ,productId}) 
      const productLink = categoryId
        ? `/products?category=${categoryId}`
        : `/products/${productId}`;
+       useEffect(()=>{
+        console.log(productId);
+       },[])
   return (
     <div className="flex flex-col w-fit justify-center h-full gap-4">
       <div className="relative ">
@@ -34,7 +37,7 @@ function ProductCard({ image, buttonText, items, title, categoryId ,productId}) 
           <Skeleton className={"w-3 h-4"} />
         )}
 
-        <p className="text-secondaryGray">{items && items + "items"}</p>
+        <p className="text-secondaryGray">{items && items + " items"}</p>
       </div>
       <Button className="text-center  bg-primaryBlack hover:bg-primaryPurple border text-white border-secondaryWhite ">
         <Link href={productLink}>{buttonText}</Link>
