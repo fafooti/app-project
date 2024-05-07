@@ -1,0 +1,47 @@
+<svg width="1440" height="714" viewBox="0 0 1440 714" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.8">
+<mask id="mask0_1_1548" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-298" y="48" width="2035" height="634">
+<path d="M1736.93 48.5298H-297.463V681.1H1736.93V48.5298Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_1_1548)">
+<g opacity="0.1">
+<path d="M138.555 681.1V48.5298" stroke="#626971"/>
+<path d="M283.717 681.1V48.5298" stroke="#626971"/>
+<path d="M428.88 681.1V48.5298" stroke="#626971"/>
+<path d="M574.043 681.1V48.5298" stroke="#626971"/>
+<path d="M719.205 681.1V48.5298" stroke="#626971"/>
+<path d="M864.368 681.1V48.5298" stroke="#626971"/>
+<path d="M1009.53 681.1V48.5298" stroke="#626971"/>
+<path d="M1154.69 681.1V48.5298" stroke="#626971"/>
+<path d="M1299.86 681.1V48.5298" stroke="#626971"/>
+</g>
+</g>
+</g>
+<g opacity="0.8">
+<mask id="mask1_1_1548" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-297" y="48" width="2035" height="658">
+<path d="M1737.46 48H-296.933V706H1737.46V48Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_1_1548)">
+<path opacity="0.1" d="M-296.933 48.5298H1737.46" stroke="#626971"/>
+<path opacity="0.1" d="M-296.933 187.335H1737.46" stroke="#626971"/>
+<path opacity="0.1" d="M-296.933 326.14H1737.46" stroke="#626971"/>
+<path opacity="0.1" d="M-296.933 464.945H1737.46" stroke="#626971"/>
+<path opacity="0.1" d="M-296.933 603.75H1737.46" stroke="#626971"/>
+</g>
+</g>
+<rect y="300" width="1440" height="390" fill="url(#paint0_linear_1_1548)"/>
+<g opacity="0.1" filter="url(#filter0_f_1_1548)">
+<ellipse cx="720.5" cy="286.5" rx="315.5" ry="127.5" fill="#783AFE"/>
+</g>
+<defs>
+<filter id="filter0_f_1_1548" x="105" y="-141" width="1231" height="855" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_1_1548"/>
+</filter>
+<linearGradient id="paint0_linear_1_1548" x1="720" y1="300" x2="720" y2="690" gradientUnits="userSpaceOnUse">
+<stop stop-color="#16171C" stop-opacity="0"/>
+<stop offset="1" stop-color="#16171C"/>
+</linearGradient>
+</defs>
+</svg>

@@ -11,7 +11,6 @@ import React, { useEffect, useState } from "react";
 import Skeleton from "@/components/Skeleton/Skeleton";
 import ProductDuration from "@/modules/Product/ProductDuration";
 
-
 function Product() {
   const [product, setProduct] = useState({});
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +19,7 @@ function Product() {
   const [selectedDuration, setSelectedDuration] = useState("");
   const router = useRouter();
   const { id } = router.query;
-console.log(router.query);
+  console.log(router.query);
   const handleSelectedDuratioin = (id) => {
     setSelectedDuration(id);
   };
@@ -38,7 +37,6 @@ console.log(router.query);
   };
 
   useEffect(() => {
-  
     if (id) {
       const productId = parseInt(id);
       const productData = productsData.products.find(

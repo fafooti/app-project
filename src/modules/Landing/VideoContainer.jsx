@@ -26,7 +26,7 @@ const items = [
 ];
 
 function VideoContainer() {
-  const [activeItemId, setActiveItemId] = useState(null);
+  const [activeItemId, setActiveItemId] = useState(1);
   const intervalRef = useRef(null);
 
   const handleItemClicked = (itemId) => {

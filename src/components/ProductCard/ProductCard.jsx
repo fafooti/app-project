@@ -6,15 +6,20 @@ import Link from "next/link";
 import Skeleton from "../Skeleton/Skeleton";
 import useDebounce from "@/hooks/useDebounce";
 
-
-
-function ProductCard({ image, buttonText, items, title, categoryId ,productId}) {
-     const productLink = categoryId
-       ? `/products?category=${categoryId}`
-       : `/products/${productId}`;
-       useEffect(()=>{
-        console.log(productId);
-       },[])
+function ProductCard({
+  image,
+  buttonText,
+  items,
+  title,
+  categoryId,
+  productId,
+}) {
+  const productLink = categoryId
+    ? `/products?category=${categoryId}`
+    : `/products/${productId}`;
+  useEffect(() => {
+    console.log(productId);
+  }, []);
   return (
     <div className="flex flex-col w-fit justify-center h-full gap-4">
       <div className="relative ">
@@ -44,8 +49,6 @@ function ProductCard({ image, buttonText, items, title, categoryId ,productId}) 
       </Button>
     </div>
   );
-};
-
-
+}
 
 export default ProductCard;

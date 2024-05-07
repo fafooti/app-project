@@ -21,7 +21,7 @@
 }
 .glow::before {
     content: "";
-    background: url("/img/others/purple-glow.svg");
+    background: url("/icons/ellipse.svg");
     background-position: center;
     background-size: cover;
     overflow: visible;
@@ -34,7 +34,7 @@
 
 .glow::after {
     content: "";
-    background: url("/img/others/purple-glow.svg");
+    background: url("/icons/ellipse.svg");
     background-position: center;
     background-size: cover;
     overflow: visible;

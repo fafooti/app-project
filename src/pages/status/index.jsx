@@ -2,66 +2,44 @@ import Layout from "@/layouts/Layout";
 import Status from "@/modules/Status/Status";
 import React, { useEffect, useState } from "react";
 import productsData from "/src/pages/api/products.json";
-import categoryData from "/src/pages/api/categoey.json"
-const statuses = [
-  {
-    id:1,
-    title: "rust",
-    details: [
-      {
-        id: 1,
-        name: "V6 Chair + Spoofer",
-        status: "updating",
-      },
-      {
-        id: 2,
-        name: "V6 Chair + Spoofer",
-        status: "undetected",
-      },
-      {
-        id: 3,
-        name: "V6 Chair + Spoofer",
-        status: "undetected",
-      },
-    ],
-  },
-  {
-    id:2,
-    title: "MODERN WARFARE",
-    details: [
-      {
-        id: 4,
-        name: "SSZ SCRIPT",
-        status: "use-at-own-risk",
-      },
-      {
-        id: 5,
-        name: "SSZ SCRIPT",
-        status: "detected",
-      },
-    ],
-  },
-];
+import glowImage from "/public/icons/ellipse.svg";
+import Image from "next/image";
+import categoryData from "/src/pages/api/categoey.json";
+
 function Index() {
-  const [categories,setCategories]=useState([])
-  const [details, setDetails] = useState(["1"]);
+  const [categories, setCategories] = useState([]);
 
 
-  useEffect(()=>{
-    setCategories(categoryData.data)
-    console.log("indesx",categories);
-  },[categories])
+  useEffect(() => {
+    categoryData.data.forEach((category) => {
+      if (category.products.length > 0) {
+        console.log(category);
+        setCategories((prev) => [...prev, category]);
+      }
+    });
+  }, []);
   return (
     <Layout>
       <div
-        style={{ background: "url('/background/hero.svg')" }}
+        style={{ background: "url('/background/product-background.svg')" }}
         className="!bg-no-repeat !bg-contain xl:w-[1216px]  w-11/12 min-h-screen  mx-auto  py-28 "
       >
         {" "}
         <div className="flex flex-col mx-auto items-center text-center justify-start pt-24 pb-10 md:w-4/5">
-          <p className="text-white md:text-5xl text-3xl mb-5 font-semibold uppercase">
-            STATUS
-          </p>
+          <div className="relative px-8 w-[404px] h-[91px]">
+            <Image
+              alt="glow"
+              src={glowImage}
+              width={100}
+              height={100}
+              className="absolute -top-14 left-0 right-0 w-full "
+            />
+
+            <h1 className="text-white md:text-5xl text-3xl mb-5 font-semibold uppercase">
+              STATUS
+            </h1>
+          </div>
+
           <p className="text-secondaryPurple  md:w-[713px] mb-8 font-moderat text-lg  ">
             stay up to date with the status of all tools
           </p>

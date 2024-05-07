@@ -7,8 +7,8 @@ import Image from "next/image";
 function Hero() {
   return (
     <div>
-      <section className="  w-wcreen pt-2 ">
-        <div className="flex flex-col mx-auto items-center text-center justify-center pt-16 md:w-4/5 1440:w-[1013px]">
+      <section className=" w-screen pt-2 ">
+        <div className="flex flex-col mx-auto items-center text-center justify-center pt-24 md:w-4/5 1440:w-[1013px]">
           <a
             href=""
             className=" bg-primaryBlack py-2 px-4 mb-7 text-xs rounded border-secondaryWhite border-2  text-primaryGreen w-fit"

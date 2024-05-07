@@ -14,6 +14,7 @@ function PopularProducts() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
 
+
   useEffect(() => {
     setIsLoading(true);
     setCategories(allCategories.data);

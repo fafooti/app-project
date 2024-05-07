@@ -43,11 +43,8 @@ function Products() {
 
   return (
     <Layout>
-      <div className="flex flex-col  items-center justify-between mx-auto  min-h-screen overflow-hidden">
-        <div
-          style={{ background: "url('/background/hero.svg')" }}
-          className="!bg-no-repeat !bg-contain w-[90%] 1440:w-[1216px]   mx-auto  "
-        >
+      <div style={{background:"url(/background/product-background.svg)"}}>
+        <div className="flex flex-col  items-center justify-between   min-h-screen overflow-hidden">
           <div className=" mx-auto pt-16">
             <ProductDetails />
           </div>
