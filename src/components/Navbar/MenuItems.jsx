@@ -13,11 +13,11 @@ function MenuItems() {
         <Image width={12} height={12} src={store} alt="menu" />
         Store
       </Link>
-      <Link href="/status" className="flex items-center gap-2  mt-5">
+      <Link href="/" className="flex items-center gap-2  mt-5">
         <Image width={12} height={12} src={status} alt="menu" />
         Status
       </Link>
-      <Link href="/faq" className="flex items-center gap-2  mt-5 mb-10">
+      <Link href="/" className="flex items-center gap-2  mt-5 mb-10">
         <Image width={12} height={12} src={faq} alt="menu" />
         FAQ
       </Link>

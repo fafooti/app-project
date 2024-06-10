@@ -17,7 +17,7 @@ export default function Home() {
           style={{ background: "url('/background/hero.svg')" }}
           className="!bg-no-repeat  pb-[160px] !bg-cover   "
         >
-          <div className="min-w-screen  pt-16">
+          <div className="min-w-screen pt-16">
             <Hero />
             <DeatilsContainer />
           </div>

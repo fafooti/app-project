@@ -1,14 +1,12 @@
 import Layout from "@/layouts/Layout";
 import Status from "@/modules/Status/Status";
 import React, { useEffect, useState } from "react";
-import productsData from "/src/pages/api/products.json";
 import glowImage from "/public/icons/ellipse.svg";
 import Image from "next/image";
 import categoryData from "/src/pages/api/categoey.json";
 
 function Index() {
   const [categories, setCategories] = useState([]);
-
 
   useEffect(() => {
     categoryData.data.forEach((category) => {

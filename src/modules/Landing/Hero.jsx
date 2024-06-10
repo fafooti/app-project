@@ -35,7 +35,7 @@ function Hero() {
           <p className="text-secondaryPurple   md:max-w-[713px] mb-8 font-moderat text-lg  ">
             Your 1 Trusted Cheat Provider, offering high-quality, reliable
             products for amazing prices with top notch customer support.
-          </p>
+          </p>                                    
           <div className="flex gap-2 justify-center  ">
             <Button className="text-white uppercase   bg-primaryPurple">
               <Image alt="cheat icon" width={14} height={14} src={cheat.src} />
