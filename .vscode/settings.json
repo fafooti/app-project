@@ -1,0 +1,9 @@
+{
+  // Editor
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+  },
+  "editor.autoClosingBrackets": "always",
+  "editor.formatOnSave": true,
+}
