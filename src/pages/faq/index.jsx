@@ -1,5 +1,5 @@
-import Faq from "@/modules/FAQ/Faq";
 import Layout from "@/layouts/Layout";
+import Faq from "@/modules/FAQ/Faq";
 
 const faqData = [
   {
@@ -35,7 +35,7 @@ const faqData = [
 ];
 function Index() {
   return (
-    <Layout>
+    <Layout>  
       <div
         style={{ background: "url('/background/product-background.svg')" }}
         className="!bg-no-repeat !bg-contain xl:w-[1216px]  w-11/12 min-h-[1000px] mx-auto  pt-20 pb-24 "
@@ -44,7 +44,7 @@ function Index() {
           <h1 className="text-white md:text-42 text-2xl mb-5 font-semibold uppercase">
             FREQUENTLY ASKED QUESTIONS
           </h1>
-          <p className="text-secondaryPurple  md:w-[713px]  font-moderat text-lg  ">
+          <p className="text-secondaryPurple  md:w-[713px] font-moderat text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.

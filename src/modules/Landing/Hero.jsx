@@ -1,9 +1,8 @@
-import React from "react";
-import { Button } from "/src/components";
-import cheat from "/public/icons/cheat.svg";
-import Typewriter from "typewriter-effect";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import Typewriter from "typewriter-effect";
+import cheat from "/public/icons/cheat.svg";
+import { Button } from "/src/components";
 function Hero() {
   return (
     <div>
@@ -35,7 +34,7 @@ function Hero() {
           <p className="text-secondaryPurple   md:max-w-[713px] mb-8 font-moderat text-lg  ">
             Your 1 Trusted Cheat Provider, offering high-quality, reliable
             products for amazing prices with top notch customer support.
-          </p>
+          </p>                                    
           <div className="flex gap-2 justify-center  ">
             <Button className="text-white uppercase   bg-primaryPurple">
               <Image alt="cheat icon" width={14} height={14} src={cheat.src} />
