@@ -3,7 +3,6 @@ import Status from "@/modules/Status/Status";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import glowImage from "/public/icons/ellipse.svg";
-import categoryData from "/src/pages/api/categoey.json";
 
 function Index() {
   const [categories, setCategories] = useState([]);
@@ -11,7 +10,7 @@ function Index() {
   useEffect(() => {
     categoryData.data.forEach((category) => {
       if (category.products.length > 0) {
-        console.log(category);
+     
         setCategories((prev) => [...prev, category]);
       }
     });

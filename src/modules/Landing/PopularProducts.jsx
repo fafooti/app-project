@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
-import allCategories from "/src/pages/api/categoey.json";
-import style from "./hero.module.css";
 import ProductCard from "@/components/ProductCard/ProductCard";
-import { useRouter } from "next/router";
-import productsData from "/src/pages/api/products.json";
-import Link from "next/link";
 import ProductSkleton from "@/components/Skeleton/ProductSkleton";
+import allCategories from "@/pages/api/category.json";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import style from "./hero.module.css";
 
 function PopularProducts() {
   const [categories, setCategories] = useState([]);

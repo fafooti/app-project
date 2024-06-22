@@ -1,9 +1,7 @@
 import { Button } from "@/components";
-import icon from "/public/icons/category.svg";
-import React, { useEffect, useState } from "react";
-import categoryData from "/src/pages/api/categoey.json";
-import allData from "/src/pages/api/products.json";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import icon from "/public/icons/category.svg";
 
 function Categories({ products, setProducts }) {
   const [categories, setCategories] = useState([]);

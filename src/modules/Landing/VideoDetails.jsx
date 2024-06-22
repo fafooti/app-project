@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 
 function VideoDetails({ id, title, desc, isActive, onItemClick }) {
      const handleClick = () => {

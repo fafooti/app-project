@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
-import searchIson from "/public/icons/search.svg";
 import useDebounce from "@/hooks/useDebounce";
+import { useEffect, useState } from "react";
+import searchIson from "/public/icons/search.svg";
 function SearchInput({ onSearch }) {
   const [searchQuery, setSearchQuery] = useState("");
   const debouncedSearchQuery = useDebounce(searchQuery, 500);
   useEffect(() => {
     onSearch(debouncedSearchQuery);
-    console.log(debouncedSearchQuery);
   }, [debouncedSearchQuery]);
   return (
     <div className=" bg-secondaryBlack border  border-secondaryWhite  mt-3  mx-auto rounded-md flex ">

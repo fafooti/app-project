@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import categoryData from "/src/pages/api/categoey.json";
+import { useEffect, useState } from "react";
 import allData from "/src/pages/api/products.json";
 function Status({ title, categoryId }) {
   const [details, setDetails] = useState([]);
@@ -15,7 +14,6 @@ const handleDetails=()=>{
    );
   
    setDetails(filteredProducts);
- console.log(filteredProducts);
 }
 useEffect(()=>{
 handleDetails()

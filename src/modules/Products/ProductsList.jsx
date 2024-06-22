@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from "react";
-import productsdata from "/src/pages/api/products.json";
 import ProductCard from "@/components/ProductCard/ProductCard";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Skeleton from "@/components/Skeleton/Skeleton";
 import ProductSkleton from "@/components/Skeleton/ProductSkleton";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import productsdata from "/src/pages/api/products.json";
 
 function ProductsList({ setProducts, products, searchQuery }) {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
   const handleSerach = () => {
     setIsLoading(true);
-    console.log("start");
     if (searchQuery.trim() !== "") {
       const searchedProducts = products.filter((item) =>
         item.title.toLowerCase().includes(searchQuery.trim().toLowerCase())
@@ -22,7 +19,6 @@ function ProductsList({ setProducts, products, searchQuery }) {
       setProducts(productsdata.products);
     }
     setIsLoading(false);
-    console.log("end");
   };
   useEffect(() => {
     handleSerach();

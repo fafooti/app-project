@@ -1,10 +1,8 @@
-import React, { useEffect } from "react";
-import product from "/public/common/product.svg";
 import Image from "next/image";
-import { Button } from "..";
 import Link from "next/link";
+import { useEffect } from "react";
+import { Button } from "..";
 import Skeleton from "../Skeleton/Skeleton";
-import useDebounce from "@/hooks/useDebounce";
 
 function ProductCard({
   image,
@@ -18,7 +16,6 @@ function ProductCard({
     ? `/products?category=${categoryId}`
     : `/products/${productId}`;
   useEffect(() => {
-    console.log(productId);
   }, []);
   return (
     <div className="flex flex-col w-fit justify-center h-full gap-4">

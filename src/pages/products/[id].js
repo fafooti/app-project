@@ -1,15 +1,15 @@
-import Image from "next/image";
-import { useRouter } from "next/router";
-import Link from "next/link";
-import BackArrow from "/public/icons/backArrow.svg";
-import MediaTab from "@/modules/Product/MediaTab";
-import FeaturesTab from "@/modules/Product/FeaturesTab";
 import { Button } from "@/components";
-import Layout from "@/layouts/Layout";
-import productsData from "/src/pages/api/products.json";
-import React, { useEffect, useState } from "react";
 import Skeleton from "@/components/Skeleton/Skeleton";
+import Layout from "@/layouts/Layout";
+import FeaturesTab from "@/modules/Product/FeaturesTab";
+import MediaTab from "@/modules/Product/MediaTab";
 import ProductDuration from "@/modules/Product/ProductDuration";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import BackArrow from "/public/icons/backArrow.svg";
+import productsData from "/src/pages/api/products.json";
 
 function Product() {
   const [product, setProduct] = useState({});
@@ -19,7 +19,6 @@ function Product() {
   const [selectedDuration, setSelectedDuration] = useState("");
   const router = useRouter();
   const { id } = router.query;
-  console.log(router.query);
   const handleSelectedDuratioin = (id) => {
     setSelectedDuration(id);
   };
@@ -42,10 +41,8 @@ function Product() {
       const productData = productsData.products.find(
         (item) => item.id === productId
       );
-      console.log("Product Data:", productData);
       setProduct(productData);
       setIsLoading(false);
-      console.log("product", product?.variants);
     }
   }, [id]);
 

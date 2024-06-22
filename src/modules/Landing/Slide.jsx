@@ -1,6 +1,6 @@
-import filledStar from "/public/icons/filledstar.svg";
-import emptyStar from "/public/icons//emptystar.svg";
 import Image from "next/image";
+import emptyStar from "/public/icons//emptystar.svg";
+import filledStar from "/public/icons/filledstar.svg";
 
 function Slide({ name, rate, desc }) {
   const starCount = 5;

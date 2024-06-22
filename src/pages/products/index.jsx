@@ -3,10 +3,9 @@ import Categories from "@/modules/Products/Categories";
 import ProductDetails from "@/modules/Products/ProductDetails";
 import ProductsList from "@/modules/Products/ProductsList";
 import SearchInput from "@/modules/Products/SearchInput";
-import React, { useEffect, useMemo, useState } from "react";
-import productsData from "/src/pages/api/products.json";
-import categoryData from "/src/pages/api/categoey.json";
 import { useRouter } from "next/router";
+import { useMemo, useState } from "react";
+import productsData from "/src/pages/api/products.json";
 
 function Products() {
   const router = useRouter();
@@ -30,10 +29,8 @@ function Products() {
     return [...products];
   }, [category, products]);
 
-  console.log(products, filterData, category);
 
   const getAllProducts = () => {
-    console.log(productsData.products);
     setProducts(productsData.products);
   };
 

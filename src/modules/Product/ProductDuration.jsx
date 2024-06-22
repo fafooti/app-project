@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 function ProductDuration({
   duration,
@@ -9,7 +9,6 @@ function ProductDuration({
   selectedDuration,
 }) {
   useEffect(() => {
-    console.log(duration);
   }, []);
   return (
     <div

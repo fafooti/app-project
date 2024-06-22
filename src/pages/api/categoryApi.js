@@ -24,9 +24,7 @@ export async function readCategory(input) {
       message: "Read selected categories",
       data: output.data,
     };
-  } catch (err) {
-    console.log(err);
-  }
+  } catch (err) {}
 }
 
 export async function deleteCategory(id) {

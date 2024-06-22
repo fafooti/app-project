@@ -1,7 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import VideoDetails from "./VideoDetails";
-import { useState } from "react";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import VideoDetails from "./VideoDetails";
 import video from "/public/common/video.svg";
 
 const items = [

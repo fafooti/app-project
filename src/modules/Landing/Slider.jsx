@@ -1,6 +1,5 @@
-import React from "react";
-import Slide from "./Slide";
 import Marquee from "react-fast-marquee";
+import Slide from "./Slide";
 import shadow from "/public/common/shadow.svg";
 const data = [
   {

@@ -1,6 +1,4 @@
-import React from "react";
 import DetailsCard from "./DetailsCard";
-import index from "@/pages/faq";
 const info = [
   {
  
