@@ -1,9 +1,8 @@
-import React from "react";
-import { Button } from "/src/components";
-import cheat from "/public/icons/cheat.svg";
-import Typewriter from "typewriter-effect";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import Typewriter from "typewriter-effect";
+import cheat from "/public/icons/cheat.svg";
+import { Button } from "/src/components";
 function Hero() {
   return (
     <div>

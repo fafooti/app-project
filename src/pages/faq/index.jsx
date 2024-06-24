@@ -1,5 +1,5 @@
-import Faq from "@/modules/FAQ/Faq";
 import Layout from "@/layouts/Layout";
+import Faq from "@/modules/FAQ/Faq";
 
 const faqData = [
   {

@@ -1,8 +1,8 @@
 import Layout from "@/layouts/Layout";
 import Status from "@/modules/Status/Status";
-import React, { useEffect, useState } from "react";
-import glowImage from "/public/icons/ellipse.svg";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import glowImage from "/public/icons/ellipse.svg";
 import categoryData from "/src/pages/api/categoey.json";
 
 function Index() {
