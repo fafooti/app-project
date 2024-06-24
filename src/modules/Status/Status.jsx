@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import categoryData from "/src/pages/api/categoey.json";
+import categoryData from "/src/pages/api/category.json";
 import allData from "/src/pages/api/products.json";
 function Status({ title, categoryId }) {
   const [details, setDetails] = useState([]);

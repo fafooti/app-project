@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import allCategories from "/src/pages/api/categoey.json";
+import allCategories from "/src/pages/api/category.json";
 import style from "./hero.module.css";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import { useRouter } from "next/router";

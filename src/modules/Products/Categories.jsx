@@ -1,7 +1,7 @@
 import { Button } from "@/components";
 import icon from "/public/icons/category.svg";
 import React, { useEffect, useState } from "react";
-import categoryData from "/src/pages/api/categoey.json";
+import categoryData from "/src/pages/api/category.json";
 import allData from "/src/pages/api/products.json";
 import { useRouter } from "next/router";
 

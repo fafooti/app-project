@@ -3,7 +3,7 @@ import Status from "@/modules/Status/Status";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import glowImage from "/public/icons/ellipse.svg";
-import categoryData from "/src/pages/api/categoey.json";
+import categoryData from "/src/pages/api/category.json";
 
 function Index() {
   const [categories, setCategories] = useState([]);

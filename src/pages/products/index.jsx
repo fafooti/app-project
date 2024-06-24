@@ -5,7 +5,7 @@ import ProductsList from "@/modules/Products/ProductsList";
 import SearchInput from "@/modules/Products/SearchInput";
 import React, { useEffect, useMemo, useState } from "react";
 import productsData from "/src/pages/api/products.json";
-import categoryData from "/src/pages/api/categoey.json";
+import categoryData from "/src/pages/api/category.json";
 import { useRouter } from "next/router";
 
 function Products() {
