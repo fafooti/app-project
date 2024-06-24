@@ -28,9 +28,9 @@ function Navbar() {
   return (
     <header
       style={{
-        background: "linear-gradient(rgba(21, 22, 27, 1),rgba(24, 25, 30, 1))",
+        background:"linear-gradient(rgba(21, 22, 27, 1),rgba(24, 25, 30, 1))",
       }}
-      className=" fixed top-0 z-30 border-b border-secondaryWhite w-full "
+      className="fixed top-0 z-30 border-b border-secondaryWhite w-full "
     >
       <div className=" flex justify-between items-center  xl:w-[1216px]  py-4  md:px-10 lg:px-16 2xl:px-0 px-4 mx-auto">
         <div className="flex justify-between items-center  ">
